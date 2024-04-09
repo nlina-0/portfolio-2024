@@ -25,12 +25,13 @@ h1 {
 nav {
     display: flex;
     justify-content: space-between;
-    height: 7vh;
+    height: 6vh;
 }
 
 #logo {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
     border-radius: 100%;
     background-color: black;
     position: absolute;
@@ -65,16 +66,22 @@ nav {
 #nav-about,
 #nav-work,
 #nav-blog {
-    margin: 2vw;
+    margin: 1vw 2vw;
 }
 
 main {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 75vh;
-    position: relative;
-    top: 80px;
     margin-left: 10px;
+    width: 50%;
+    /* background-color: aqua; */
+}
+
+#intro {
+    position: relative;
+    left: 15px;
 }
 
 #break{
@@ -94,6 +101,7 @@ footer {
     justify-content: space-between;
     align-items: end;
     height: 18vh;
+    /* background-color: bisque; */
 }
 
 #job-title {
@@ -143,11 +151,6 @@ footer {
         justify-content: end;
     }
 
-    main {
-        position: relative;
-        top: 260px;
-    }
-
     h5 {
         font-size: 20px;
         line-height: 100%;
@@ -156,5 +159,16 @@ footer {
     .social-icon {
         width: 60px;
         height: 60px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    main {
+        position: relative;
+        left: 200px;
+    }
+
+    footer {
+        position: sticky;
     }
 }
