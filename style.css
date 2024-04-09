@@ -11,39 +11,70 @@ body {
 h1,
 h2,
 h3,
+h4,
 h5,
 p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "roboto", sans-serif;
 }
 
 h1 {
     font-size: 90px;
+    line-height: 80%;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
-    background-color: blue;
+    height: 7vh;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: black;
+    position: absolute;
 }
 
 #menu {
-    width: 11px;
-    height: 11px;
-    margin: 2vw;
-    background-color: black;
+    position: relative;
+    left: 5px;
 }
 
-#nav-heading {
+#line-1 {
+    width: 15px;
+    height: 3px;
+    border-radius: 20%;
+    margin: 2vw;
+    background-color: black;
+    position: relative;
+    top: 1px;
+}
+
+#line-2 {
+    width: 15px;
+    height: 3px;
+    border-radius: 20%;
+    margin: 2vw;
+    background-color: black;
+    position: relative;
+    top: -3px;
+}
+
+#nav-home,
+#nav-about,
+#nav-work,
+#nav-blog {
     margin: 2vw;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    /* position: absolute;
-    top: 110px; */
-    height: 70vh;
-    background-color: rgba(0, 255, 255, 0.39);
+    height: 75vh;
+    position: relative;
+    top: 80px;
+    margin-left: 10px;
 }
 
 #break{
@@ -56,21 +87,74 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* align-items: flex-end; */
-    
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    height: 18vh;
 }
 
 #job-title {
-    padding-left: 10px;
+    padding: 10px;
 }
 
 #social {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    bottom: 10px;
+
 }
 
 .social-icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
     border-radius: 100%;
     background-color: black;
+}
+
+@media only screen and (max-width:799px){
+    #nav-about,
+    #nav-work,
+    #nav-blog {
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 800px) {
+    h1 {
+        font-size: 220px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    nav {
+        justify-content: end;
+    }
+
+    main {
+        position: relative;
+        top: 260px;
+    }
+
+    h5 {
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .social-icon {
+        width: 60px;
+        height: 60px;
+    }
 }
