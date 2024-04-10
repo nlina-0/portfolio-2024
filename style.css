@@ -8,6 +8,13 @@ body {
     background-color: #E0E0E0;
 }
 
+/* link styling */
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+/* text properties */
 h1,
 h2,
 h3,
@@ -15,6 +22,7 @@ h4,
 h5,
 p {
     font-family: "roboto", sans-serif;
+    /* color: #131313; */
 }
 
 h1 {
@@ -22,12 +30,25 @@ h1 {
     line-height: 80%;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    height: 6vh;
+h2 {
+    font-size: 60px;
+    line-height: 80%;
 }
 
+h5 {
+    line-height: 100%;
+}
+
+/* p {
+    font-size: 14px;
+    line-height: 100%;
+} */
+
+
+
+/* HOME PAGE */
+
+/* self brand logo, only appears when not in mobile view */
 #logo {
     width: 40px;
     height: 40px;
@@ -35,6 +56,18 @@ nav {
     border-radius: 100%;
     background-color: black;
     position: absolute;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 6vh;
 }
 
 #menu {
@@ -65,7 +98,8 @@ nav {
 #nav-home,
 #nav-about,
 #nav-work,
-#nav-blog {
+#nav-blog,
+.page-title {
     margin: 1vw 2vw;
 }
 
@@ -81,7 +115,7 @@ main {
 
 #intro {
     position: relative;
-    left: 15px;
+    left: 12px;
 }
 
 #break{
@@ -90,41 +124,126 @@ main {
     background-color: black;
 }
 
-article {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 footer {
     display: flex;
     justify-content: space-between;
     align-items: end;
     height: 18vh;
-    /* background-color: bisque; */
+    position: sticky;
 }
 
 #job-title {
-    padding: 10px;
+    padding: 10px 10px 5px 10px;
 }
 
+/* position the social icon links */
 #social {
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
     bottom: 10px;
-
 }
 
+/* style individual social icon links */
 .social-icon {
     width: 40px;
     height: 40px;
     margin-right: 10px;
     border-radius: 100%;
-    background-color: black;
+    background-color: #000000;
 }
 
+
+
+
+/* WORK PAGE */
+.page-title {
+    font-size: 12px;
+}
+
+/* work page font styling */
+h2 {
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.year {
+    font-weight: bold;
+}
+
+/* subtitle positioning */
+#edu-title,
+#work-title {
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* container positioning for education and work details */
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* education section */
+#edu {
+    color: #E0E0E0;
+    background-color: #131313;
+    padding-bottom: 20px;
+}
+
+
+/* break lines */
+.line {
+    width: 95vw;
+    height: .1px;
+    margin-bottom: 3px;
+}
+
+#line-white {
+    background-color: #E0E0E0;
+}
+
+#line-black {
+    background-color: #131313;
+}
+
+
+
+.details {
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    /* background-color: rgba(250, 235, 215, 0.397); */
+}
+
+.year {
+    margin-right: 20vw;
+    margin-left: 5vw;
+}
+
+.name {
+    margin-right: 5vw;
+}
+
+
+
+
+/* specific work page font styling */
+#work-page > section > .details > .name ,
+#work-page > section > .details > .year {
+    font-size: 11px;
+    line-height: 120%;
+}
+
+
+/* mobile display */
 @media only screen and (max-width:799px){
     #nav-about,
     #nav-work,
@@ -138,11 +257,14 @@ footer {
     
 }
 
+
+/* tablet display */
 @media only screen and (min-width: 800px) {
     h1 {
         font-size: 220px;
     }
 
+    /* remove hamburger icon when no longer in mobile display */
     #menu {
         display: none;
     }
@@ -156,19 +278,28 @@ footer {
         line-height: 100%;
     }
 
+    /* enlarge the size of icons */
     .social-icon {
         width: 60px;
         height: 60px;
     }
 }
 
+
+/* desktop display */
 @media only screen and (min-width: 1440px) {
     main {
         position: relative;
         left: 200px;
     }
 
+    #intro {
+        position: relative;
+        left: 15px;
+    }
+
+
     footer {
-        position: sticky;
+        /* position: sticky; */
     }
 }
