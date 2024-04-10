@@ -44,11 +44,12 @@ h5 {
 /* self brand logo, only appears when not in mobile view */
 #logo {
     position: absolute;
-    width: 3.5vw;
-    height: 3.5vw;
+    width: 3.5vh;
+    height: 3.5vh;
     /* max-width: 46px;
     max-height: 46px; */
-    margin: 10px;
+    margin-left: 10px;
+    margin-top: 1vh;
     border-radius: 100%;
     background-color: black;
 }
@@ -296,7 +297,7 @@ h2 {
 }
 
 
-/* tablet display */
+/* TABLET DISPLAY */
 @media only screen and (min-width: 800px) {
 
     .page-title {
@@ -358,6 +359,10 @@ h2 {
         width: 100vw;
     }
 
+    #edu {
+        padding-bottom: 20px;
+    }
+
     /* subtitle positioning */
     #edu-title,
     #work-title {
@@ -383,11 +388,6 @@ h2 {
 /* desktop display */
 @media only screen and (min-width: 1000px) {
     
-    /* #logo {
-        max-width: 50px;
-        max-height: 50px;
-    } */
-    
     main {
         position: relative;
         left: 200px;
@@ -399,35 +399,19 @@ h2 {
     }
 
 
-    footer {
-        /* position: sticky; */
-    }
-
-
 
 
     /* WORK PAGE - DESKTOP BREAK */
     
 
-    #work-page {
-        /* background-color: red; */
-    }
-
-    #edu {
-        width: 38vw;
-    }
-
-    #work {
-        width: 60vw;
-    }
-
     #edu-title,
     #work-title {
-        padding-left: 5%;
-    }
+    max-width: 70%;
+    padding-left: 0px;
+}
 
     .line {
-        width: 90%;
+        max-width: 70%;
     }
 
     .year {
@@ -436,7 +420,47 @@ h2 {
     }
 
     .details {
+        max-width: 70%;
         margin-bottom: 35px;
     }
+
+    .button {
+        max-width: 70%;
+    }
+
+}
+
+/* extra wide desktop */
+@media only screen and (min-width: 1500px) {
+
+     
+    
+    /* WORK PAGE - DESKTOP BREAK */
+    
+
+     #edu-title,
+     #work-title {
+     max-width: 45%;
+     padding-left: 0px;
+     padding-bottom: 80px;
+    }
+ 
+     .line {
+         max-width: 45%;
+     }
+ 
+     .year {
+         margin-right: 6vw;
+         margin-left: 0;
+     }
+ 
+     .details {
+         max-width: 45%;
+         margin-bottom: 35px;
+     }
+ 
+     .button {
+         max-width: 45%;
+     }
 
 }
