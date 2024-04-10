@@ -1,5 +1,5 @@
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -43,21 +43,18 @@ h5 {
 
 /* self brand logo, only appears when not in mobile view */
 #logo {
-    width: 40px;
-    height: 40px;
+    position: absolute;
+    width: 4vw;
+    height: 4vw;
     margin: 10px;
     border-radius: 100%;
     background-color: black;
-    position: absolute;
 }
 
 
-/* page flow for home and work */
 article {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 100vw;
 }
 
 
@@ -70,33 +67,31 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 6vh;
-    width: auto;
-}
-
-#menu {
-    position: relative;
-    left: 5px;
 }
 
 /* hamburger icon drawing */
+#hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    left: 4vw;
+}
+
 #line-1 {
     width: 15px;
     height: 3px;
     border-radius: 25px;
-    margin: 2vw;
+    margin: 2px;
     background-color: black;
-    position: relative;
-    top: 1px;
 }
 
 #line-2 {
     width: 15px;
     height: 3px;
     border-radius: 25px;
-    margin: 2vw;
+    margin: 2px;
     background-color: black;
-    position: relative;
-    top: -3px;
 }
 
 .nav-name,
@@ -166,11 +161,6 @@ footer {
 
 /* WORK PAGE */
 
-/* page label, top right hand corner */
-.page-title {
-    font-size: 12px;
-}
-
 /* work page font styling */
 /* subtitle, education & work */
 h2 {
@@ -195,15 +185,15 @@ h2 {
 }
 
 /* container positioning overall layout for education and work details */
-section {
+#work-page > section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
 }
 
 /* education section */
 #edu {
-    width: 100vw;
     color: #E0E0E0;
     background-color: #131313;
 }
@@ -211,7 +201,7 @@ section {
 
 /* break lines */
 .line {
-    width: 95vw;
+    width: 90%;
     height: 1px;
     margin-bottom: 3px;
 }
@@ -229,10 +219,9 @@ section {
 .details {
     display: flex;
     flex-direction: row;
-    width: 90vw;
+    width: 90%;
     margin-top: 5px;
     margin-bottom: 25px;
-    /* background-color: red; */
 }
 
 /* year positioning */
@@ -259,7 +248,7 @@ section {
     align-items: center;
     background-color: #131313;
     border-radius: 25px;
-    width: 80vw;
+    width: 80%;
     height: 50px;
     margin-top: 40px;
     margin-bottom: 30px;
@@ -276,6 +265,12 @@ section {
 
 /* mobile display */
 @media only screen and (max-width:799px){
+    
+    /* page label, top right hand corner */
+    .page-title {
+        font-size: 12px;
+    }
+    
     .nav-name {
         display: none;
     }
@@ -299,12 +294,16 @@ section {
     }
 
     /* removes hamburger icon when no longer in mobile display */
-    #menu {
+    #hamburger {
         display: none;
     }
 
     nav {
         justify-content: end;
+    }
+
+    .nav-name {
+        font-size: 13px;
     }
 
 
@@ -343,7 +342,7 @@ section {
     /* subtitle positioning */
     #edu-title,
     #work-title {
-        padding-left: 20vw;
+        padding-left: 10vw;
         padding-top: 10px;
         padding-bottom: 60px;
         /* background-color: rgba(127, 255, 212, 0.664); */
@@ -353,6 +352,10 @@ section {
     .year {
         margin-right: 10vw;
         margin-left: 5vw;
+    }
+
+    .button {
+        margin-top: 80px;
     }
 }
 
