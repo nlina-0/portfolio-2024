@@ -55,10 +55,10 @@ h5 {
 }
 
 
+/* OVERALL PAGE FLOW */
 article {
     display: flex;
     flex-wrap: wrap;
-    /* flex-direction: column; */
 }
 
 
@@ -71,8 +71,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 6vh;
-    /* width: 100vw; */
     flex: 100vw;
+    /* background-color: red; */
 
 }
 
@@ -107,15 +107,68 @@ nav {
 }
 
 
+/* MENU PAGE */
+
+#menu-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 100vw;
+    background-color: black;
+    height: 100vh;
+}
+
+a {
+    color: #E0E0E0;
+}
+
+#menu-page h2 {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+/* cancel icon drawing */
+#cancel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    left: 4vw;
+    top: 4vw;
+}
+
+#cancel-line-1 {
+    width: 15px;
+    height: 3px;
+    border-radius: 25px;
+    background-color: #E0E0E0;
+    transform: rotate(45deg);
+    position: relative;
+    top: 3px;
+}
+
+#cancel-line-2 {
+    width: 15px;
+    height: 3px;
+    border-radius: 25px;
+    background-color: #E0E0E0;
+    transform: rotate(-45deg);
+}
+
+
+
+
 
 
 /* HOME PAGE */
 
 main {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    height: 75vh;
+    height: 70vh;
     margin-left: 10px;
     width: 50%;
 }
@@ -135,14 +188,19 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: end;
+    width: 100%;
     height: 18vh;
-    position: sticky;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 20px;
 }
 
 #job-title {
     display: flex;
-    align-items: flex-start;
+    flex-direction: column;
     padding: 10px 10px 5px 10px;
+    margin-left: 5px;
+    /* background-color: aqua; */
 }
 
 /* position the social icon links */
@@ -162,6 +220,8 @@ footer {
     border-radius: 100%;
     background-color: #000000;
 }
+
+
 
 
 
@@ -268,9 +328,32 @@ h2 {
 
 
 
+
+
+/* ABOUT PAGE */
+#about-myself p {
+    font-size: 12px;
+}
+
+.about-img {
+    width: 90%;
+    height: 40vh;
+    background-color: #E0E0E0;
+}
+
+#art-design {
+    width: 100vw;
+    background-color: #131313;
+    color: #E0E0E0;
+}
+
+
+
+
+
 /* PAGE BREAKS */
 
-/* mobile display */
+/* MOBILE DISPLAY */
 @media only screen and (max-width:799px){
     
     /* page label, top right hand corner */
@@ -326,6 +409,10 @@ h2 {
     h5 {
         font-size: 20px;
         line-height: 100%;
+    }
+
+    main {
+        height: 75vh;
     }
 
     /* enlarge the size of icons */
@@ -385,17 +472,29 @@ h2 {
 
 
 
-/* desktop display */
-@media only screen and (min-width: 1000px) {
+/* DESKTOP DISPLAY */
+@media only screen and (min-width: 1100px) {
+
+    /* NAV - DESKTOP BREAK */
+    .nav-name {
+        font-size: 17px;
+    }
+
     
+    /* HOME PAGE - DEKTOP BREAK */
     main {
         position: relative;
         left: 200px;
+        height: 80vh;
     }
 
     #intro {
         position: relative;
         left: 15px;
+    }
+
+    h1 {
+        font-size: 180px;
     }
 
 
@@ -430,12 +529,46 @@ h2 {
 
 }
 
-/* extra wide desktop */
+/* EXTRA WIDE DEKTOP */
 @media only screen and (min-width: 1500px) {
-
-     
     
-    /* WORK PAGE - DESKTOP BREAK */
+    /* NAVIGATION - EXTRA WIDE BREAK */
+    /* #logo {
+        left: 8vw;
+    } */
+    
+    /* .nav-name {
+        position: relative;
+        right: 190px;
+    } */
+
+
+
+    /* HOME PAGE - EXTRA WIDE BREAK */
+
+    /* HOME PAGE - MAIN */
+    #my-name {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    #last-name {
+        margin-left: 60px;
+    }
+
+    /* HOME PAGE - FOOTER */
+    /* #job-title {
+        position: relative;
+        left: 200px;
+    } */
+
+    /* #social {
+        position: relative;
+        right: 200px;
+    } */
+
+
+    /* WORK PAGE - EXTRA WIDE BREAK */
     
 
      #edu-title,
