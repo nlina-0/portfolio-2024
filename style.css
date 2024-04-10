@@ -14,6 +14,7 @@ a {
     color: black;
 }
 
+
 /* text properties */
 h1,
 h2,
@@ -22,7 +23,6 @@ h4,
 h5,
 p {
     font-family: "roboto", sans-serif;
-    /* color: #131313; */
 }
 
 h1 {
@@ -39,11 +39,6 @@ h5 {
     line-height: 100%;
 }
 
-/* p {
-    font-size: 14px;
-    line-height: 100%;
-} */
-
 
 
 /* self brand logo, only appears when not in mobile view */
@@ -56,18 +51,26 @@ h5 {
     position: absolute;
 }
 
+
+/* page flow for home and work */
 article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100vw;
 }
 
 
-/* MENU */
+
+
+/* NAVIGATION */
+
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     height: 6vh;
+    width: auto;
 }
 
 #menu {
@@ -75,6 +78,7 @@ nav {
     left: 5px;
 }
 
+/* hamburger icon drawing */
 #line-1 {
     width: 15px;
     height: 3px;
@@ -95,13 +99,11 @@ nav {
     top: -3px;
 }
 
-#nav-home,
-#nav-about,
-#nav-work,
-#nav-blog,
+.nav-name,
 .page-title {
     margin: 1vw 2vw;
 }
+
 
 
 
@@ -114,7 +116,6 @@ main {
     height: 75vh;
     margin-left: 10px;
     width: 50%;
-    /* background-color: aqua; */
 }
 
 #intro {
@@ -137,6 +138,8 @@ footer {
 }
 
 #job-title {
+    display: flex;
+    align-items: flex-start;
     padding: 10px 10px 5px 10px;
 }
 
@@ -163,12 +166,13 @@ footer {
 
 /* WORK PAGE */
 
-/* page label, top righ hand corner */
+/* page label, top right hand corner */
 .page-title {
     font-size: 12px;
 }
 
 /* work page font styling */
+/* subtitle, education & work */
 h2 {
     font-weight: 400;
     font-size: 50px;
@@ -181,7 +185,7 @@ h2 {
 /* subtitle positioning */
 #edu-title,
 #work-title {
-    width: 100%;
+    width: 100vw;
     margin-top: 25px;
     margin-bottom: 70px;
     padding-left: 30px;
@@ -199,6 +203,7 @@ section {
 
 /* education section */
 #edu {
+    width: 100vw;
     color: #E0E0E0;
     background-color: #131313;
 }
@@ -224,21 +229,23 @@ section {
 .details {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 90vw;
     margin-top: 5px;
     margin-bottom: 25px;
+    /* background-color: red; */
 }
 
+/* year positioning */
 .year {
     margin-right: 15vw;
-    margin-left: 5vw;
 }
 
+/* title name and work place positioning */
 .name {
     margin-right: 5vw;
 }
 
-/* specific work page font styling */
+/* font styling specific to WORK PAGE */
 #work-page > section > .details > .name ,
 #work-page > section > .details > .year {
     font-size: 11px;
@@ -269,9 +276,7 @@ section {
 
 /* mobile display */
 @media only screen and (max-width:799px){
-    #nav-about,
-    #nav-work,
-    #nav-blog {
+    .nav-name {
         display: none;
     }
 
@@ -284,11 +289,16 @@ section {
 
 /* tablet display */
 @media only screen and (min-width: 800px) {
+
+    .page-title {
+        display: none;
+    }
+    
     h1 {
         font-size: 220px;
     }
 
-    /* remove hamburger icon when no longer in mobile display */
+    /* removes hamburger icon when no longer in mobile display */
     #menu {
         display: none;
     }
@@ -297,6 +307,8 @@ section {
         justify-content: end;
     }
 
+
+    /* HOME PAGE - TABLET BREAK */
     h5 {
         font-size: 20px;
         line-height: 100%;
@@ -306,6 +318,41 @@ section {
     .social-icon {
         width: 60px;
         height: 60px;
+    }
+
+
+    
+    /* WORK PAGE - TABLET BREAK */
+
+    /* paragraph font styling specific to WORK PAGE */
+    #work-page > section > .details > .name ,
+    #work-page > section > .details > .year {
+        font-size: 15px;
+        line-height: 140%;
+    }
+
+    .line {
+        width: 80vw;
+    }
+
+    /* subtitle, education & work */
+    h2 {
+        font-size: 70px;
+    }
+
+    /* subtitle positioning */
+    #edu-title,
+    #work-title {
+        padding-left: 20vw;
+        padding-top: 10px;
+        padding-bottom: 60px;
+        /* background-color: rgba(127, 255, 212, 0.664); */
+    }
+
+    /* year positioning */
+    .year {
+        margin-right: 10vw;
+        margin-left: 5vw;
     }
 }
 
