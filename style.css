@@ -44,8 +44,10 @@ h5 {
 /* self brand logo, only appears when not in mobile view */
 #logo {
     position: absolute;
-    width: 4vw;
-    height: 4vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    /* max-width: 46px;
+    max-height: 46px; */
     margin: 10px;
     border-radius: 100%;
     background-color: black;
@@ -68,7 +70,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     height: 6vh;
-    width: 100vw;
+    /* width: 100vw; */
+    flex: 100vw;
+
 }
 
 /* hamburger icon drawing */
@@ -163,8 +167,7 @@ footer {
 
 /* WORK PAGE */
 
-/* work page font styling */
-/* subtitle, education & work */
+/* subtitle styling, education & work */
 h2 {
     font-weight: 400;
     font-size: 50px;
@@ -184,6 +187,7 @@ h2 {
     display: flex;
     justify-content: flex-start;
     letter-spacing: -3px;
+    /* background-color: aqua; */
 }
 
 /* container positioning overall layout for education and work details */
@@ -191,7 +195,7 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* width: 100%; */
+    /* width: 100vw; */
 }
 
 /* education section */
@@ -280,6 +284,14 @@ h2 {
     #logo {
         display: none;
     }
+
+
+
+    /* WORK PAGE */
+    #edu,
+    #work {
+        width: 100vw;
+    }
     
 }
 
@@ -333,12 +345,17 @@ h2 {
     }
 
     .line {
-        width: 80vw;
+        width: 80%;
     }
 
     /* subtitle, education & work */
     h2 {
         font-size: 70px;
+    }
+
+    #edu,
+    #work {
+        width: 100vw;
     }
 
     /* subtitle positioning */
@@ -362,8 +379,15 @@ h2 {
 }
 
 
+
 /* desktop display */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1000px) {
+    
+    /* #logo {
+        max-width: 50px;
+        max-height: 50px;
+    } */
+    
     main {
         position: relative;
         left: 200px;
@@ -379,19 +403,40 @@ h2 {
         /* position: sticky; */
     }
 
+
+
+
     /* WORK PAGE - DESKTOP BREAK */
+    
 
     #work-page {
         /* background-color: red; */
     }
 
     #edu {
-        width: 40vw;
-        /* background-color: red; */
+        width: 38vw;
     }
 
     #work {
         width: 60vw;
+    }
+
+    #edu-title,
+    #work-title {
+        padding-left: 5%;
+    }
+
+    .line {
+        width: 90%;
+    }
+
+    .year {
+        margin-right: 6vw;
+        margin-left: 0;
+    }
+
+    .details {
+        margin-bottom: 35px;
     }
 
 }
