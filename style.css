@@ -332,7 +332,11 @@ h2 {
 
 /* ABOUT PAGE */
 
-#about-page section {
+/* selecting the article that contains all content of about page and setting the overall flow of page */
+/* #about-page section  */
+#about-myself,
+#art-design,
+#health{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -345,26 +349,26 @@ nav {
     
 }
 
+/* container for about myself section */
 #about-myself {
     background-color: blueviolet;
     width: 100vw;
 }
 
+/* container for paragraph in about myself section */
+#about-para {
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* container for paragraphs written in the interests & hobbies section */
 .hobby-para {
     width: 90%;
     background-color: rgb(255, 255, 255);
     height: 200px;
 }
-
-#about-para {
-    object-fit: cover;
-    /* grid-template-columns: 100px 100px; */
-    /* column-width: 100px; */
-    column-count: 2;
-    margin-top: 50px;
-    padding: 20px;
-}
-
 
 #art-design {
     background-color: #0011ff;
@@ -376,19 +380,23 @@ nav {
     width: 100vw;
 }
 
-.hobby-title {
+/* text -section label for hobbies and itnerests */
+.hobby-label {
     width: 90%;
     background-color: rgb(92, 92, 92);
     height: 40px;
 }
 
+/* text - subtitle for overall page */
 .about-titles {
     width: 90%;
-    background-color: rgb(208, 255, 0);
+    background-color: rgb(251, 255, 0);
     height: 80px;
 }
 
-.about-img {
+/* images */
+#health-img,
+#art-img {
     width: 90%;
     background-color: rgb(0, 255, 98);
     height: 200px;
@@ -516,6 +524,39 @@ nav {
     .button {
         margin-top: 80px;
     }
+
+
+
+    /* ABOUT PAGE - TABLET BREAK */
+
+    #about-para {
+        column-count: 2;
+    }
+
+    #art-design,
+    #health {
+        /* flex-direction: row; */
+        flex-wrap: wrap;
+        height: 400px;
+    }
+
+    .hobby-label,
+    .about-titles,
+    .hobby-para {
+        width: 50%;
+    }
+
+    #art-img {
+        order: 2;
+        width: 50%;
+        height: 90%;
+    }
+
+    #health-img {
+        order: -2;
+        width: 50%;
+        height: 90%;
+    }
 }
 
 
@@ -575,7 +616,24 @@ nav {
         max-width: 70%;
     }
 
+
+
+
+
+    /* ABOUT PAGE - DESKTOP BREAK */
+
+
+    #about-para {
+        max-width: 50%;
+        /* background-color: red; */
+    }
+
 }
+
+
+
+
+
 
 /* EXTRA WIDE DEKTOP */
 @media only screen and (min-width: 1500px) {
