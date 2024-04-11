@@ -33,7 +33,16 @@ h1 {
 h2 {
     font-size: 60px;
     line-height: 80%;
+    font-weight: 500;
+    letter-spacing: -2px;
 }
+
+/* subtitle styling, education & work */
+/* h2 {
+    font-weight: 400;
+    font-size: 50px;
+} */
+
 
 h5 {
     line-height: 100%;
@@ -169,7 +178,7 @@ main {
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
-    height: 70vh;
+    height: 75vh;
     margin-left: 10px;
     width: 50%;
 }
@@ -229,11 +238,6 @@ footer {
 
 /* WORK PAGE */
 
-/* subtitle styling, education & work */
-h2 {
-    font-weight: 400;
-    font-size: 50px;
-}
 
 .year {
     font-weight: bold;
@@ -373,7 +377,7 @@ h2 {
 
 /* text - styling specific to hobbies & interests section */
 .hobby-label h4 {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /* text - subtitle for hobbies & interests section */
@@ -396,6 +400,7 @@ h2 {
     background-color: rgb(87, 87, 87);
     height: 80vw;
     margin-top: 20px;
+    border-radius: 2%;
     /* object-fit: cover; */
 }
 
@@ -514,7 +519,7 @@ h2 {
     }
 
     #edu {
-        padding-bottom: 20px;
+        padding-bottom: 50px;
     }
 
     /* subtitle positioning */
@@ -548,6 +553,7 @@ h2 {
         align-items: flex-start;
         margin-left: 10vw;
         margin-right: 10vw;
+        padding-top: 50px;
     }
 
     /* about myself paragraph - width break and column gap added */
@@ -744,7 +750,7 @@ h2 {
      #work-title {
      max-width: 45%;
      padding-left: 0px;
-     padding-bottom: 80px;
+     padding-bottom: 50px;
     }
  
      #work-page .line {
@@ -758,7 +764,8 @@ h2 {
  
      .details {
          max-width: 45%;
-         margin-bottom: 35px;
+         margin-top: 10px;
+         margin-bottom: 30px;
      }
  
      .button {
