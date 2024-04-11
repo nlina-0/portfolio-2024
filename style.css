@@ -341,7 +341,7 @@ footer {
 
 #work-page-2 section {
     background-color: #00000033;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 .work-section:nth-child(1){
@@ -356,12 +356,16 @@ footer {
 
 #edu-box {
     width: 100%;
-    border: 3px solid red;
+    /* border: 3px solid red; */
 }
 
 #work-box {
     width: 100%;
-    border: 3px solid red;
+    /* border: 3px solid red; */
+}
+
+.deets {
+    display: flex;
 }
 
 
@@ -803,7 +807,12 @@ footer {
     
     #work-page-2 section {
         background-color: #00000033;
-        border: 3px solid red;
+        /* border: 3px solid red; */
+    }
+
+    .work-section {
+        border-right: 2px solid #00000033;
+
     }
     
     .work-section:nth-child(1){
@@ -813,6 +822,10 @@ footer {
     
     .work-section:nth-child(2){
         width: 65%; 
+    }
+
+    #work-page-2 .line {
+        max-width: 100%;
     }
 
 
