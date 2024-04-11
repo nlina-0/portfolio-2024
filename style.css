@@ -621,7 +621,10 @@ nav {
 
 
     /* ABOUT PAGE - DESKTOP BREAK */
-
+    
+    #about-myself {
+        align-items: flex-start;
+    }
 
     #about-para {
         max-width: 50%;
