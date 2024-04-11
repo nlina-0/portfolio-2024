@@ -387,6 +387,12 @@ nav {
     height: 40px;
 }
 
+#about-title-1 {
+    width: 90%;
+    background-color: rgb(251, 255, 0);
+    height: 80px;
+}
+
 /* text - subtitle for overall page */
 .about-titles {
     width: 90%;
@@ -621,15 +627,24 @@ nav {
 
 
     /* ABOUT PAGE - DESKTOP BREAK */
-    
+
+    /* #about-page section {
+        display: flex;
+        
+        max-width: 60%;
+    } */
+
     #about-myself {
         align-items: flex-start;
+        margin-left: 10vw;
     }
 
+    #about-title-1,
     #about-para {
         max-width: 50%;
-        /* background-color: red; */
     }
+
+    
 
 }
 
