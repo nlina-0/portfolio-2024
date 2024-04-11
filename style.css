@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* background color */
 body {
     background-color: #E0E0E0;
 }
@@ -36,13 +37,6 @@ h2 {
     font-weight: 500;
     letter-spacing: -2px;
 }
-
-/* subtitle styling, education & work */
-/* h2 {
-    font-weight: 400;
-    font-size: 50px;
-} */
-
 
 h5 {
     line-height: 100%;
@@ -82,8 +76,6 @@ nav {
     align-items: center;
     height: 6vh;
     flex: 100vw;
-    /* background-color: red; */
-
 }
 
 /* hamburger icon drawing */
@@ -115,6 +107,7 @@ nav {
 .page-title {
     margin: 1vw 2vw;
 }
+
 
 
 /* MENU PAGE */
@@ -188,7 +181,7 @@ main {
     left: 12px;
 }
 
-#break{
+#nav-break{
     width: 100%;
     height: 1px;
     background-color: black;
@@ -234,104 +227,8 @@ footer {
 
 
 
+
 /* WORK PAGE */
-
-
-.year {
-    font-weight: bold;
-}
-
-/* subtitle positioning */
-#edu-title,
-#work-title {
-    width: 100%;
-    margin-top: 25px;
-    margin-bottom: 70px;
-    padding-left: 12px;
-    display: flex;
-    justify-content: flex-start;
-    letter-spacing: -3px;
-    /* background-color: aqua; */
-}
-
-/* container positioning overall layout for education and work details */
-#work-page > section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* width: 100vw; */
-}
-
-
-/* education section */
-/* break lines */
-.line {
-    width: 90%;
-    height: 1px;
-    margin-bottom: 3px;
-}
-
-#line-white {
-    background-color: #E0E0E0;
-}
-
-#line-black {
-    background-color: #131313;
-}
-
-
-/* child container holding individual information about education and work */
-.details {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    margin-top: 5px;
-    margin-bottom: 25px;
-}
-
-/* #edu {
-    margin-bottom: 50px;
-} */
-
-/* year positioning */
-.year {
-    margin-right: 15vw;
-}
-
-/* title name and work place positioning */
-.name {
-    margin-right: 5vw;
-}
-
-/* font styling specific to WORK PAGE */
-#work-page > section > .details > .name ,
-#work-page > section > .details > .year {
-    font-size: 12px;
-    line-height: 140%;
-}
-
-/* resume button link */
-.button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #131313;
-    border-radius: 25px;
-    width: 80%;
-    height: 50px;
-    margin-top: 40px;
-    margin-bottom: 30px;
-}
-
-.button h2 {
-    font-size: 18px;
-    color: #E0E0E0;
-}
-
-
-
-/* WORK PAGE 2 */
-
 
 #work-main {
     display: flex;
@@ -339,12 +236,10 @@ footer {
     width: 100vw;
 }
 
-#work-page-2 section {
-    background-color: #00000033;
-    /* border: 3px solid red; */
-}
-
 .work-section:nth-child(1){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
 
@@ -354,18 +249,69 @@ footer {
     width: 100%;
 }
 
-#edu-box {
+#edu-box,
+#work-box{
+    padding-bottom: 30px;
     width: 100%;
-    /* border: 3px solid red; */
-}
-
-#work-box {
-    width: 100%;
-    /* border: 3px solid red; */
-}
-
-.deets {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* division lines between each section */
+.section-break{
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+/* detail break lines */
+.break-line {
+    width: 95%;
+    height: 1px;
+    margin-bottom: 3px;
+    background-color: #131313;
+}
+
+.details {
+    display: flex;
+    padding: 0 20px 20px 0;
+    width: 95%;
+}
+
+.year {
+    margin: 0 50px 0 0px;
+}
+
+.work-title {
+    margin: 20px 0 40px 10px;
+    /* background-color: rgba(0, 255, 255, 0.24); */
+    width: 100%;
+}
+
+#title-stack {
+    margin: 20px 20px 40px 15px;
+}
+
+.name p {
+    font-size: 13px;
+}
+
+#resume-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+#button-draw {
+    width: 95%;
+    height: 50px;
+    border-radius: 25px;
+    border: 1px solid #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -431,15 +377,14 @@ footer {
 
 /* images */
 .about-img {
-    width: 100%;
+    /* width: 100vw; */
     /* height: auto; */
     margin-top: 20px;
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .about-img img {
     border-radius: 8px;
-    /* width: 100%; */
 }
 
 /* spacing for bottom of page */
@@ -555,12 +500,6 @@ footer {
 
 
 
-    /* WORK PAGE - MOBILE BREAK */
-    #edu,
-    #work {
-        width: 100vw;
-    }
-
 
     /* BLOG PAGE - MOBILE BREAK*/
     .post-border {
@@ -612,53 +551,12 @@ footer {
     }
 
 
-    
-    /* WORK PAGE - TABLET BREAK */
-
-    /* paragraph font styling specific to WORK PAGE */
-    #work-page > section > .details > .name ,
-    #work-page > section > .details > .year {
-        font-size: 15px;
-        line-height: 140%;
-    }
-
-    .line {
-        width: 80%;
-    }
-
-    /* subtitle, education & work */
-    h2 {
-        font-size: 70px;
-    }
-
-    #edu,
-    #work {
-        width: 100vw;
-    }
-
-    #edu {
-        padding-bottom: 50px;
-    }
-
-    /* subtitle positioning */
-    #edu-title,
-    #work-title {
-        padding-left: 10vw;
-        padding-top: 10px;
-        padding-bottom: 60px;
-        margin-bottom: 150px;
-        /* background-color: rgba(127, 255, 212, 0.664); */
-    }
 
 
-    /* year positioning */
-    .year {
-        margin-right: 10vw;
-        margin-left: 5vw;
-    }
+    /* WORK PAGE .2 */
 
-    .button {
-        margin-top: 80px;
+    #button-draw {
+        width: 50%;
     }
 
 
@@ -770,34 +668,9 @@ footer {
     }
 
 
-    /* WORK PAGE - DESKTOP BREAK */
-    #edu-title,
-    #work-title {
-        max-width: 70%;
-        padding-left: 0px;
-    }
-
-    #work-page .line {
-        max-width: 70%;
-    }
-
-    .year {
-        margin-right: 6vw;
-        margin-left: 0;
-    }
-
-    .details {
-        max-width: 70%;
-        margin-bottom: 35px;
-    }
-
-    .button {
-        max-width: 70%;
-    }
 
 
-
-    /* WORK PAGE 2 */
+    /* WORK PAGE - DESKTOP BREAK*/
 
     #work-main {
         display: flex;
@@ -805,30 +678,34 @@ footer {
         width: 100vw;
     }
     
-    #work-page-2 section {
-        background-color: #00000033;
+    #work-page section {
+        /* background-color: #00000033; */
         /* border: 3px solid red; */
     }
 
     .work-section {
         border-right: 2px solid #00000033;
-
     }
     
     .work-section:nth-child(1){
         height: 94vh; 
         width: 35%; 
+        justify-content: space-between;
     }
     
     .work-section:nth-child(2){
         width: 65%; 
     }
 
-    #work-page-2 .line {
+    #work-page .line {
         max-width: 100%;
     }
 
+    #edu-break {
+        display: none;
+    }
 
+   
 
 
     /* ABOUT PAGE - DESKTOP BREAK */
@@ -881,23 +758,11 @@ footer {
 
 /* EXTRA WIDE DEKTOP */
 @media only screen and (min-width: 1500px) {
-    
-    /* NAVIGATION - EXTRA WIDE BREAK */
-    /* #logo {
-        left: 8vw;
-    } */
-    
-    /* .nav-name {
-        position: relative;
-        right: 190px;
-    } */
-
 
 
 
     /* HOME PAGE - EXTRA WIDE BREAK */
 
-    /* HOME PAGE - MAIN */
     #my-name {
         display: flex;
         margin-top: 20px;
@@ -907,63 +772,19 @@ footer {
         margin-left: 60px;
     }
 
-    /* HOME PAGE - FOOTER */
-    /* #job-title {
-        position: relative;
-        left: 200px;
-    } */
-
-    /* #social {
-        position: relative;
-        right: 200px;
-    } */
 
 
+    /* ABOUT PAGE - EXTRA WIDE BREAK */
 
-
-
-    /* WORK PAGE - EXTRA WIDE BREAK */
-    
-     #edu-title,
-     #work-title {
-     max-width: 45%;
-     padding-left: 0px;
-     padding-bottom: 50px;
-    }
- 
-     #work-page .line {
-         max-width: 45%;
-     }
- 
-     .year {
-         margin-right: 6vw;
-         margin-left: 0;
-     }
- 
-     .details {
-         max-width: 45%;
-         margin-top: 10px;
-         margin-bottom: 30px;
-     }
- 
-     .button {
-         max-width: 45%;
-     }
-
-
-
-
-     /* ABOUT PAGE - EXTRA WIDE BREAK */
-
-     #about-page section {
+    #about-page section {
         /* background-color: red; */
         margin-left: 20vw;
         margin-right: 20vw;
-     }
+    }
 
 
 
-       /* BLOG PAGE - DESKTOP BREAK */
+    /* BLOG PAGE - DESKTOP BREAK */
 
     /* width control */
     #blog-header,
