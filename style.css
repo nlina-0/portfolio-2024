@@ -297,6 +297,7 @@ footer {
     font-size: 13px;
 }
 
+/* resume button */
 #resume-button {
     width: 100%;
     display: flex;
@@ -553,11 +554,11 @@ footer {
 
 
 
-    /* WORK PAGE .2 */
+    /* WORK PAGE - TABLET BREAK */
 
-    #button-draw {
+    /* #button-draw {
         width: 50%;
-    }
+    } */
 
 
 
@@ -677,13 +678,8 @@ footer {
         flex-direction: row;
         width: 100vw;
     }
-    
-    #work-page section {
-        /* background-color: #00000033; */
-        /* border: 3px solid red; */
-    }
 
-    .work-section {
+    .work-section:nth-child(1) {
         border-right: 2px solid #00000033;
     }
     
@@ -704,6 +700,11 @@ footer {
     #edu-break {
         display: none;
     }
+
+    .name p {
+        font-size: 16px;
+    }
+    
 
    
 
