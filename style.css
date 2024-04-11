@@ -335,32 +335,42 @@ h2 {
 /* selecting the article that contains all content of about page and setting the overall flow of page */
 /* #about-page section  */
 #about-myself,
-#art-design,
-#health{
+#about-art,
+#about-health{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 20px;
     padding-bottom: 20px;
-}
-
-nav {
-    background-color: aqua;
-    
+    width: 100vw;
 }
 
 /* container for about myself section */
 #about-myself {
-    background-color: blueviolet;
-    width: 100vw;
+    /* background-color: blueviolet; */
+    /* width: 100vw; */
+}
+
+/* property adjustment for ABOUT title */
+#about-title-1 {
+    width: 90%;
+    /* background-color: rgb(251, 255, 0);
+    height: 80px; */
+    padding-left: 20px;
 }
 
 /* container for paragraph in about myself section */
 #about-para {
     width: 90%;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
     margin-top: 50px;
     padding: 20px;
+    line-height: 1.4;
+}
+
+/* space between paragraphs */
+#about-para p {
+    margin-bottom: 20px;
 }
 
 /* container for paragraphs written in the interests & hobbies section */
@@ -370,14 +380,14 @@ nav {
     height: 200px;
 }
 
-#art-design {
+#about-art {
     background-color: #0011ff;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
-#health {
+#about-health {
     background-color: #ff00ea;
-    width: 100vw;
+    /* width: 100vw; */
 }
 
 /* text -section label for hobbies and itnerests */
@@ -385,12 +395,6 @@ nav {
     width: 90%;
     background-color: rgb(92, 92, 92);
     height: 40px;
-}
-
-#about-title-1 {
-    width: 90%;
-    background-color: rgb(251, 255, 0);
-    height: 80px;
 }
 
 /* text - subtitle for overall page */
@@ -539,8 +543,8 @@ nav {
         column-count: 2;
     }
 
-    #art-design,
-    #health {
+    #about-art,
+    #about-health {
         /* flex-direction: row; */
         flex-wrap: wrap;
         height: 400px;
@@ -628,24 +632,22 @@ nav {
 
     /* ABOUT PAGE - DESKTOP BREAK */
 
-    /* #about-page section {
-        display: flex;
-        
-        max-width: 60%;
-    } */
-
     #about-myself {
         align-items: flex-start;
         margin-left: 10vw;
+        margin-right: 10vw;
+    }
+
+    #about-art,
+    #about-health {
+        margin-left: 10vw;
+        margin-right: 10vw;
     }
 
     #about-title-1,
     #about-para {
         max-width: 50%;
     }
-
-    
-
 }
 
 
