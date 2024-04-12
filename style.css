@@ -183,7 +183,7 @@ h4 a {
 
 #intro {
     position: relative;
-    left: 12px;
+    left: 5px;
 }
 
 #home-footer {
@@ -284,7 +284,7 @@ h4 a {
 }
 
 .year {
-    margin: 0 50px 0 0px;
+    margin-right: 50px;
 }
 
 .work-title {
@@ -648,6 +648,11 @@ footer {
         height: 60px;
     }
 
+    #intro {
+        left: 13px;
+        padding-bottom: 10px;
+    }
+
 
 
 
@@ -683,6 +688,16 @@ footer {
     #about p {
         font-size: 15px;
         line-height: 1.5;
+    }
+
+
+
+    /* WORK PAGE - TABLET BREAK */
+
+    #info-box,
+    #edu-box,
+    #work-box {
+        padding: 0 4vw;
     }
 
 
@@ -729,7 +744,7 @@ footer {
 
     #intro {
         position: relative;
-        left: 15px;
+        left: 10px;
     }
 
     h1 {
@@ -772,7 +787,11 @@ footer {
     }
 
     .name p {
-        font-size: 14px;
+        font-size: 16px;
+    }
+
+    .year {
+        margin-right: 100px;
     }
     
 
@@ -793,12 +812,8 @@ footer {
     }
 
     #about-title {
-        margin-bottom: 100px;
+        margin-bottom: 15vh;
     }
-
-    /* #about p {
-        font-size: 18px;
-    } */
 
 
 
@@ -856,7 +871,7 @@ footer {
 
     #my-name {
         display: flex;
-        margin-top: 20px;
+        /* margin-top: 12px; */
     }
 
     #last-name {
