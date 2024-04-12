@@ -453,9 +453,9 @@ body{
     justify-content: center;
 }
 
-#blog-page .line {
+/* #blog-page .line {
     width: 100vw;
-}
+} */
 
 /* division lines for each section */
 #blog-section-break {
@@ -464,6 +464,7 @@ body{
     background-color: black;
 }
 
+/* page title */
 #blog-header {
     /* background-color: purple; */
     width: 100vw;
@@ -471,6 +472,7 @@ body{
     padding-top: 30px;
 }
 
+/* css grid - blog posts */
 #blog-main {
     /* background-color: rgb(0, 26, 255); */
     width: 100vw;
@@ -490,6 +492,7 @@ body{
     display: flex;
     justify-content: space-between;
     padding-left: 10px;
+    /* background-color: red; */
 }
 
 .post-detail {
@@ -513,6 +516,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    /* border: 5px solid blue; */
 }
 
 .post-border {
