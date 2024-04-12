@@ -178,7 +178,7 @@ h4 a {
 
 /* HOME PAGE */
 
-main {
+#home-main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -228,7 +228,9 @@ footer {
     margin-right: 10px;
     border-radius: 100%;
     background-color: #000000;
+    overflow: hidden;
 }
+
 
 
 
