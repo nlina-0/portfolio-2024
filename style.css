@@ -321,29 +321,35 @@ footer {
 
 /* ABOUT PAGE */
 
-/* about-page sections  */
+/* removes horizontal scrolling */
+body{
+    overflow-x:hidden;
+}
+
+#about-page {
+    display: flex;
+    justify-content: center;
+}
 
 #about-main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
 }
 
-#about-myself{
+#about-myself {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
     width: 100vw;
 }
 
 #about-myself-card {
-    /* background-color: red; */
     width: 90vw;
 }
 
-/* grid css applied to hobbies & interests section */
+/* hobbies & interests - css grid applied */
 #about-art,
 #about-health {
     display: grid;
@@ -352,51 +358,49 @@ footer {
     padding-bottom: 30px;
 }
 
-/* OUTLINE */
-/* .about-text{
-    border: 5px solid blue;
+/* all sections - padding added */
+#about-art,
+#about-myself-card,
+#about-health {
+        padding: 4vw 0 30px 0;
 }
 
-.about-img {
-    border: 5px solid red;
-} */
 
-/* about myself section - title positioning */
+/* about myself - title positioning */
 #about-title-1 {
     padding-top: 10px;
     width: 90%;
 }
 
-/* container for paragraph in about myself section */
+/* about myself - container for paragraph  */
 #about-para {
-    /* width: 90%; */
     margin: 70px 0 30px 0;
     line-height: 1.4;
 }
 
-/* space between paragraphs */
+/* about myself - space between paragraphs */
 #about-para p {
     margin-bottom: 20px;
 }
 
-/* text -section label for hobbies and itnerests */
+/* hobbies & interests - label */
 .hobby-label {
     width: 90%;
     margin-top: 20px;
     padding-bottom: 50px;
 }
 
-/* text - styling specific to hobbies & interests section */
+/* hobbies & interests - text styling */
 .hobby-label h4 {
     font-weight: 400;
 }
 
-/* text - subtitle for hobbies & interests section */
+/* hobbies & interests - text title container width */
 .about-titles {
     width: 90%;
 }
 
-/* container for paragraphs written in the interests & hobbies section */
+/* hobbies & interests - paragraph container */
 .hobby-para {
     width: 90%;
     padding-top: 20px;
@@ -405,8 +409,6 @@ footer {
 }
 
 /* images */
-
-
 .about-img img {
     border-radius: 8px;
     object-fit: cover;
@@ -421,9 +423,10 @@ footer {
 
 /* line division between sections */
 #about-page .line {
-    width: 100vw;
+    width: 100%;
 }
 
+/* paragraph font size */
 #about-page p {
     font-size: 14px;
 }
@@ -603,16 +606,20 @@ footer {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #about-health .about-text {
+    #about-art .about-text {
         grid-area: 1 / 2 / 2 / 3;
     }
 
-    #about-health .about-text{
+    #about-art .about-text{
         margin-left: 20px;
     }
 
-    .about-img {
-        margin: 20px;
+    #art-img {
+        margin: 20px 20px 20px 0;
+    }
+
+    #health-img {
+        margin: 20px 0px 20px 20px;
     }
 
 
@@ -702,11 +709,19 @@ footer {
 
     #about-art,
     #about-health,
-    #about-myself {
-        width: 80%;
+    #about-myself-card {
+        width: 50%;
     }
 
+    #about-art,
+    #about-myself-card,
+    #about-health {
+        padding: 30px 0 30px 0;
+    }
 
+    #about-title {
+        margin-bottom: 100px;
+    }
 
 
 
