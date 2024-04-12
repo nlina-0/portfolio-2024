@@ -379,7 +379,6 @@ body{
         padding: 4vw 0 30px 0;
 }
 
-
 /* about myself - title positioning */
 #about-title-1 {
     padding-top: 10px;
@@ -422,7 +421,7 @@ body{
 }
 
 /* images */
-.about-img img {
+img {
     border-radius: 8px;
     object-fit: cover;
     width: 100%;
@@ -447,15 +446,13 @@ body{
 
 
 
-/* BLOG PAGE */
+
+
+/* BLOG PAGE - INDEX */
 
 #blog-page {
     justify-content: center;
 }
-
-/* #blog-page .line {
-    width: 100vw;
-} */
 
 /* division lines for each section */
 #blog-section-break {
@@ -466,7 +463,6 @@ body{
 
 /* page title */
 #blog-header {
-    /* background-color: purple; */
     width: 100vw;
     height: 300px;
     padding-top: 30px;
@@ -474,7 +470,6 @@ body{
 
 /* css grid - blog posts */
 #blog-main {
-    /* background-color: rgb(0, 26, 255); */
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -492,7 +487,6 @@ body{
     display: flex;
     justify-content: space-between;
     padding-left: 10px;
-    /* background-color: red; */
 }
 
 .post-detail {
@@ -510,13 +504,11 @@ body{
     width: 80%;
 }
 
-
 .post-right {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
-    /* border: 5px solid blue; */
 }
 
 .post-border {
@@ -534,6 +526,60 @@ body{
 
 
 
+/* BLOG PAGE - POST */
+
+.blog-para p {
+    margin-bottom: 30px;    
+    line-height: 1.4;
+}
+
+.blog-break {
+    width: 100vw;
+    height: 1px;
+    background-color: black;
+}
+
+/* blog post main element */
+#post-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    /* background-color: red; */
+}
+
+.blog-post {
+    width: 90vw;
+    padding: 4vw 0 30px 0;
+}
+
+/* about myself - container for paragraph  */
+#about-para {
+    margin: 70px 0 30px 0;
+    line-height: 1.4;
+}
+
+/* about myself - space between paragraphs */
+#about-para p {
+    margin-bottom: 20px;
+}
+
+#post-title {
+    margin-bottom: 70px;
+}
+
+.blog-img {
+    margin-bottom: 30px;
+}
+
+.publish h4 {
+    font-weight: 400;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+}
+
+
+
 
 /* PAGE BREAKS */
 
@@ -542,7 +588,6 @@ body{
     
     /* NAVIGATION */
 
-    /* page label, top right hand corner */
     .page-title {
         font-size: 12px;
     }
@@ -557,8 +602,8 @@ body{
 
 
 
-
     /* BLOG PAGE - MOBILE BREAK*/
+
     .post-border {
         display: none;
     }
@@ -593,7 +638,9 @@ body{
     }
 
 
+
     /* HOME PAGE - TABLET BREAK */
+
     h5 {
         font-size: 20px;
         line-height: 100%;
@@ -642,11 +689,14 @@ body{
 
 
 
-
     /* BLOG PAGE - TABLET BREAK */
 
     #blog-main {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blog-img {
+        margin-bottom: 60px;
     }
 
 
@@ -722,7 +772,6 @@ body{
     }
     
 
-   
 
 
     /* ABOUT PAGE - DESKTOP BREAK */
@@ -766,9 +815,16 @@ body{
         grid-auto-rows: 250px;
     }
 
-    /* #blog-section-break {
-        width: 80vw;
-    } */
+
+    /* BLOG PAGE - POST - DESKTOP BREAK */
+    .blog-post {
+        width: 50vw;
+        padding: 4vw 0 30px 0;
+    }
+
+    .blog-para {
+        font-size: 20px;
+    }
 
 }
 
@@ -779,7 +835,6 @@ body{
 
 /* EXTRA WIDE DEKTOP */
 @media only screen and (min-width: 1500px) {
-
 
 
     /* HOME PAGE - EXTRA WIDE BREAK */
@@ -795,15 +850,6 @@ body{
 
 
 
-    /* ABOUT PAGE - EXTRA WIDE BREAK */
-
-    /* #about-page section {
-        margin-left: 20vw;
-        margin-right: 20vw;
-    } */
-
-
-
     /* BLOG PAGE - DESKTOP BREAK */
 
     /* width control */
@@ -812,4 +858,5 @@ body{
     #blog-section-break {
         width: 70vw;
     }
+
 }
