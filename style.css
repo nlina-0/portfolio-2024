@@ -661,6 +661,7 @@ footer {
     #about-art,
     #about-health {
         grid-template-columns: repeat(2, 1fr);
+        margin-bottom: 50px;
     }
 
     #about-art .about-text {
@@ -679,6 +680,11 @@ footer {
         margin: 20px 0px 20px 20px;
     }
 
+    #about p {
+        font-size: 15px;
+        line-height: 1.5;
+    }
+
 
 
     /* BLOG PAGE - TABLET BREAK */
@@ -689,7 +695,13 @@ footer {
 
     .blog-img {
         margin-bottom: 60px;
+
     }
+
+    img {
+        max-height: 500px;
+    }
+
 
 
 }
@@ -700,7 +712,7 @@ footer {
 
 
 /* DESKTOP DISPLAY */
-@media only screen and (min-width: 1100px) {
+@media only screen and (min-width: 1500px) {
 
     /* NAV - DESKTOP BREAK */
     .nav-name {
@@ -771,7 +783,7 @@ footer {
     #about-art,
     #about-health,
     #about-myself-card {
-        width: 50%;
+        width: 60%;
     }
 
     #about-art,
@@ -814,23 +826,19 @@ footer {
 
     /* BLOG PAGE - POST - DESKTOP BREAK */
     .blog-post {
-        width: 50vw;
+        width: 70vw;
         padding: 4vw 0 30px 0;
     }
 
-    /* .blog-para {
-        font-size: 18px;
-        line-height: 1.8;
+    /* img {
+        max-height: 500px;
     } */
 
-    img {
-        max-height: 500px;
-    }
-
+    /* font changes effect about and blog post */
     #about p,
     p {
-        font-size: 18px;
-        line-height: 1.8;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
 }
@@ -841,7 +849,7 @@ footer {
 
 
 /* EXTRA WIDE DEKTOP */
-@media only screen and (min-width: 1500px) {
+@media only screen and (min-width: 1900px) {
 
 
     /* HOME PAGE - EXTRA WIDE BREAK */
