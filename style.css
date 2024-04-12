@@ -322,9 +322,14 @@ footer {
 /* ABOUT PAGE */
 
 /* about-page sections  */
-#about-myself,
-#about-art,
-#about-health{
+
+#about-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#about-myself{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -333,7 +338,30 @@ footer {
     width: 100vw;
 }
 
-/* property adjustment for ABOUT title */
+#about-myself-card {
+    /* background-color: red; */
+    width: 90vw;
+}
+
+/* grid css applied to hobbies & interests section */
+#about-art,
+#about-health {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 90vw;
+    padding-bottom: 30px;
+}
+
+/* OUTLINE */
+/* .about-text{
+    border: 5px solid blue;
+}
+
+.about-img {
+    border: 5px solid red;
+} */
+
+/* about myself section - title positioning */
 #about-title-1 {
     padding-top: 10px;
     width: 90%;
@@ -341,10 +369,9 @@ footer {
 
 /* container for paragraph in about myself section */
 #about-para {
-    width: 90%;
-    margin-top: 50px;
+    /* width: 90%; */
+    margin: 70px 0 30px 0;
     line-height: 1.4;
-    margin-bottom: 30px;
 }
 
 /* space between paragraphs */
@@ -355,6 +382,7 @@ footer {
 /* text -section label for hobbies and itnerests */
 .hobby-label {
     width: 90%;
+    margin-top: 20px;
     padding-bottom: 50px;
 }
 
@@ -377,15 +405,13 @@ footer {
 }
 
 /* images */
-.about-img {
-    /* width: 100vw; */
-    /* height: auto; */
-    margin-top: 20px;
-    /* object-fit: cover; */
-}
+
 
 .about-img img {
     border-radius: 8px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 /* spacing for bottom of page */
@@ -510,6 +536,8 @@ footer {
 }
 
 
+
+
 /* TABLET DISPLAY */
 @media only screen and (min-width: 800px) {
 
@@ -565,65 +593,26 @@ footer {
 
     /* ABOUT PAGE - TABLET BREAK */
 
-    /* about myself section container */
-    #about-myself {
-        align-items: flex-start;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        padding-top: 50px;
-    }
-
-    /* about myself paragraph - width break and column gap added */
     #about-para {
         column-count: 2;
         column-gap: 40px;
-        width: 100%;
-        margin-top: 100px;
-        margin-bottom: 40px;
-        /* background-color: red; */
     }
 
     #about-art,
     #about-health {
-        /* flex-direction: row; */
-        flex-wrap: wrap;
-        height: 500px;
-        margin-left: 10vw;
-        margin-right: 10vw;
-        margin-top: 30px;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .hobby-label,
-    .about-titles,
-    .hobby-para {
-        width: 50%;
+    #about-health .about-text {
+        grid-area: 1 / 2 / 2 / 3;
     }
 
-    .hobby-para {
-        padding-right: 8vw;
-    }
-
-    #art-img {
-        order: 2;
-        width: 50%;
-        /* height: 90%; */
-    }
-
-    #health-img {
-        order: -2;
-        width: 50%;
-        /* height: 100%; */
+    #about-health .about-text{
+        margin-left: 20px;
     }
 
     .about-img {
-        margin-left: 20px;
-        margin-right: 20px;
-        position: relative;
-        top: -20px;
-    }
-
-    #about-page p {
-        font-size: 16px;
+        margin: 20px;
     }
 
 
@@ -710,22 +699,14 @@ footer {
 
 
     /* ABOUT PAGE - DESKTOP BREAK */
-    #about-para {
-        column-gap: 20px;
-        margin-top: 180px;
-        /* background-color: red; */
-    }
 
     #about-art,
-    #about-health {
-        margin-left: 10vw;
-        margin-right: 10vw;
-        margin-bottom: 80px;
+    #about-health,
+    #about-myself {
+        width: 80%;
     }
 
-    #about-page p {
-        font-size: 17px;
-    }
+
 
 
 
@@ -777,11 +758,10 @@ footer {
 
     /* ABOUT PAGE - EXTRA WIDE BREAK */
 
-    #about-page section {
-        /* background-color: red; */
+    /* #about-page section {
         margin-left: 20vw;
         margin-right: 20vw;
-    }
+    } */
 
 
 
