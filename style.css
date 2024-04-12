@@ -114,6 +114,10 @@ nav {
     margin: 1vw 2vw;
 }
 
+h4 a {
+    font-weight: 400;
+}
+
 
 
 /* MENU PAGE */
@@ -320,6 +324,11 @@ footer {
     align-items: center;
 }
 
+#button-draw:hover {
+    background-color: #000000;
+    color: #E0E0E0;
+}
+
 
 
 
@@ -448,6 +457,13 @@ body{
     width: 100vw;
 }
 
+/* division lines for each section */
+#blog-section-break {
+    width: 100vw;
+    height: 1px;
+    background-color: black;
+}
+
 #blog-header {
     /* background-color: purple; */
     width: 100vw;
@@ -463,10 +479,8 @@ body{
     grid-auto-rows: 200px;
 }
 
-
 /* posts */
 .post {
-    /* background-color: rgb(0, 255, 106); */
     width: 100%;
     border: 1px solid rgb(0, 0, 0);
     border-left-style: none;
@@ -505,6 +519,11 @@ body{
     width: 1px;
     height: 90%;
     background-color: black;
+}
+
+.post:hover {
+    background-color: #000000;
+    color: #E0E0E0;
 }
 
 
@@ -726,8 +745,8 @@ body{
 
     /* width control */
     #blog-header,
-    #blog-page .line,
-    #blog-main {
+    #blog-main,
+    #blog-section-break {
         width: 80vw;
     }
 
@@ -742,6 +761,10 @@ body{
     #blog-main {
         grid-auto-rows: 250px;
     }
+
+    /* #blog-section-break {
+        width: 80vw;
+    } */
 
 }
 
@@ -781,8 +804,8 @@ body{
 
     /* width control */
     #blog-header,
-    #blog-page .line,
-    #blog-main {
+    #blog-main,
+    #blog-section-break {
         width: 70vw;
     }
 }
