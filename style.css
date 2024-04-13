@@ -46,10 +46,12 @@ h5 {
 /* self brand logo, only appears when not in mobile view */
 #logo {
     position: absolute;
-    width: 3.5vh;
-    height: 3.5vh;
-    margin-left: 10px;
-    margin-top: 1vh;
+    /* width: 3.5vh;
+    height: 3.5vh; */
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
     border-radius: 100%;
     border: 1px solid #000000;
 }
@@ -308,6 +310,8 @@ h4 a {
 }
 
 #title-stack {
+    display: flex;
+    flex-direction: column;
     margin: 20px 20px 40px 15px;
 }
 
@@ -650,6 +654,7 @@ img {
 
     nav {
         justify-content: end;
+        height: 70px;
     }
 
     .nav-name {
