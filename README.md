@@ -8,18 +8,18 @@ The purpose of this portfolio website is (use as a contact point…) that can be
 
 <br></br>
 
-## Functionality / features
+## Functionality / Features
 
 ### Navigation
 
 #### Navigation bar - Tablet and Desktop (mockup)
-![navigation bar](docs/navigation.png)
+![navigation bar mockup](docs/navigation.png)
 
 - The navigation bar remains at the top of the page. It contains a logo to the left and the options to navigate to on the right.  
 - The navigation bar remains consistent throughout all pages, except when in mobile display.
 
 #### Navigation bar - Mobile (mockup)
-![navigation bar for mobile display](docs/navigation_mobile.png)
+![navigation bar for mobile display mockup](docs/navigation_mobile.png)
 
 - When the user is in mobile display, the navigation bar will collapse into a hamburger icon (created in css) to the left and only the page title will remain to the right. By doing this, the navigation bar will look less condensed and cluttered, thereby keeping a clean and minimal aesthetics when in mobile display mode, consequently improving user experience. 
 
@@ -27,7 +27,7 @@ The purpose of this portfolio website is (use as a contact point…) that can be
 #### Manu page - Mobile (mockup)
 ![menu page for mobile display](docs/mobile_menu.png)
 
-- During mobile display mode, when the hamburger icon is clicked, the user will be directed to a new page displaying all options to navigate to. 
+- During mobile display mode, when the hamburger icon is clicked, the user will be directed to a new page clearly displaying all options to navigate to. 
 - The **X** button at the top left of the page, created using css, will return user to the previous page.
 
 
@@ -40,7 +40,9 @@ The home page consist of 3 sections:
 
 1. Navigation Bar
 2. Main element - contains the introduction
-3. The footer - contains job title and social media links. 
+3. The footer - contains job title and social media links.
+
+All sections in the home page are combined to take up 100% of viewport height. Since the main purpose of this page is to introduce myself, the introduction takes up majority of the screen space. The footer contains job titles and social media links represented as circles. 
 
 #### Home page - Mobile (mockup)
 
@@ -59,3 +61,13 @@ The home page consist of 3 sections:
 #### Home page - Desktop (mockup)
 
 <img src="docs/home_desktop.png" alt="home page desktop display mockup">
+
+
+<br></br>
+
+
+### About Page
+
+#### About - Mobile (mockup)
+
+<img src="docs/about_mobile.png" alt="home page mobile display mockup">
