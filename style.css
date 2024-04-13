@@ -54,11 +54,19 @@ h5 {
     border: 1px solid #000000;
 }
 
-
 /* OVERALL PAGE FLOW, allocated to all pages */
 article {
     display: flex;
     flex-wrap: wrap;
+}
+
+/* spacing for bottom of page */
+footer {
+    height: 6vh;   
+}
+
+footer p {
+    margin-bottom: 10px;
 }
 
 
@@ -426,14 +434,14 @@ img {
     font-size: 14px;
 }
 
-
-
-
-/* spacing for bottom of page */
-footer {
-    height: 80px;   
+#about-footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100vw;
+    /* margin-top: 20vw; */
+    border-top: 1px solid black;
 }
-
 
 
 
@@ -518,14 +526,21 @@ footer {
     color: #E0E0E0;
 }
 
-
+#blog-footer {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 100vw;
+    margin-top: 20vw;
+    border-top: 1px solid black;
+}
 
 
 
 /* BLOG POST */
 
 .blog-para p {
-    margin-bottom: 30px;    
+    margin-bottom: 25px;    
     line-height: 1.4;
 }
 
