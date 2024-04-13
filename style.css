@@ -437,15 +437,9 @@ footer {
 
 /* BLOG PAGE - INDEX */
 
+/* centers body of blog page */
 #blog-page {
     justify-content: center;
-}
-
-/* division lines for each section */
-#blog-section-break {
-    width: 100vw;
-    height: 1px;
-    background-color: black;
 }
 
 /* page title */
@@ -453,6 +447,13 @@ footer {
     width: 100vw;
     height: 300px;
     padding-top: 30px;
+}
+
+/* division lines for each section */
+#blog-section-break {
+    width: 100vw;
+    height: 1px;
+    background-color: black;
 }
 
 /* css grid - blog posts */
@@ -463,7 +464,7 @@ footer {
     grid-auto-rows: 200px;
 }
 
-/* posts */
+/* blog post child of index container */
 .post {
     width: 100%;
     border: 1px solid rgb(0, 0, 0);
@@ -474,10 +475,15 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-left: 10px;
+
+    background-color: blue;
 }
 
+/*  */
+/* container holding title, date and summary of post */
 .post-detail {
     padding-top: 20px;
+    background-color: red;
 }
 
 .post-detail h3 {
@@ -485,6 +491,7 @@ footer {
     font-weight: 400;
     padding-top: 20px;
     padding-bottom: 20px;
+    width: 100%;
 }
 
 .post-detail p {
