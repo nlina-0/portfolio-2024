@@ -103,6 +103,7 @@ nav {
     margin: 1vw 2vw;
 }
 
+/* targets all links useing h4 */
 h4 a {
     font-weight: 400;
 }
@@ -292,8 +293,10 @@ h4 a {
     margin: 20px 20px 40px 15px;
 }
 
+/* revisit for font sizes */
 .name p {
-    font-size: 13px;
+    /* font-size: 13px; */
+    font-size: 1rem;
     margin-bottom: 4px;
 }
 
@@ -435,7 +438,7 @@ footer {
 
 
 
-/* BLOG PAGE - INDEX */
+/* BLOG INDEX */
 
 /* centers body of blog page */
 #blog-page {
@@ -475,29 +478,26 @@ footer {
     display: flex;
     justify-content: space-between;
     padding-left: 10px;
-
-    background-color: blue;
 }
 
-/*  */
-/* container holding title, date and summary of post */
+/* container that has the title, publish date and summary of post */
 .post-detail {
     padding-top: 20px;
-    background-color: red;
+    padding-bottom: 20%;
 }
 
+/* text styling for title of blog posts */
 .post-detail h3 {
     font-size: 40px;
     font-weight: 400;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    width: 100%;
+    width: 70%;
 }
 
 .post-detail p {
-    width: 80%;
+    width: 70%;
 }
 
+/* container for vertical division line within the grid */
 .post-right {
     display: flex;
     justify-content: space-between;
@@ -505,12 +505,14 @@ footer {
     height: 100%;
 }
 
+/* drawing of vertical division line within grid */
 .post-border {
     width: 1px;
     height: 90%;
     background-color: black;
 }
 
+/* inverts color of post when mouse hovers over */
 .post:hover {
     background-color: #000000;
     color: #E0E0E0;
@@ -520,7 +522,7 @@ footer {
 
 
 
-/* BLOG PAGE - POST */
+/* BLOG POST */
 
 .blog-para p {
     margin-bottom: 30px;    
@@ -701,13 +703,16 @@ footer {
 
     /* BLOG PAGE - TABLET BREAK */
 
+     /* blog list splits into 2 columns */
     #blog-main {
         grid-template-columns: repeat(2, 1fr);
     }
 
+
+
+      /* BLOG POST - TABLET BREAK */
     .blog-img {
         margin-bottom: 60px;
-
     }
 
     img {
@@ -783,8 +788,9 @@ footer {
         display: none;
     }
 
+    /* revisit - text size */
     .name p {
-        font-size: 16px;
+        font-size: 1.1em;
     }
 
     .year {
@@ -823,28 +829,28 @@ footer {
         width: 80vw;
     }
 
+    /* blog list splits into 3 columns */
     #blog-main {
         grid-template-columns: repeat(3, 1fr);
     }
 
+    /* initial vertical border hidden on every 3rd post */
     .post:nth-child(3n+3) .post-border{
         display: none;
     }
 
+    /* height of rows within grid set to 250px */
     #blog-main {
         grid-auto-rows: 250px;
     }
 
 
-    /* BLOG PAGE - POST - DESKTOP BREAK */
+
+    /* BLOG POST - DESKTOP BREAK */
     .blog-post {
         width: 70vw;
         padding: 4vw 0 30px 0;
     }
-
-    /* img {
-        max-height: 500px;
-    } */
 
     /* font changes effect about and blog post */
     #about p,
