@@ -16,29 +16,29 @@
 </head>
 <body>
 
-    <!-- brand logo -->
-    <div id="logo"></div>
+    <!-- brand logo, only appears during tablet and desktop display -->
+    <figure id="logo"></figure>
     
-    <article>
+    <article id="home-page">
         
         <!-- NAVIGATION -->
         <nav>
             
-            <!-- hamburger menu icon -->
-            <div id="hamburger">
+            <!-- hamburger menu icon - only seen during mobile display. Links to separate menu page -->
+            <figure id="hamburger">
                 <a href="menu.html">
                     <div id="line-1"></div>
                     <div id="line-2"></div>
                 </a>
-            </div>
+            </figure>
 
-            <!-- separate menu name -->
+            <!-- full menu display - only seen during tablet and desktop display, hamburger icon becomes hideen -->
             <h4 class="nav-name" id="nav-home"><a href="index.html">HOME</a></h4>
             <h4 class="nav-name" id="nav-about"><a href="about.html">ABOUT</a></h4>
             <h4 class="nav-name" id="nav-work"><a href="work.html">WORK</a></h4>
             <h4 class="nav-name" id="nav-blog"><a href="blog.html">BLOG</a></h4>
             
-            <!-- page title -->
+            <!-- title of page, top right hand corner - only seen during mobile display -->
             <h4 class="page-title">HOME</h4>
 
         </nav>
@@ -46,35 +46,38 @@
         <!-- MAIN INTRO -->
         <main id="home-main">
             <h3 id="intro">HELLO, MY NAME IS</h3>
-            <div id="my-name">
+            <article id="my-name">
                 <h1>LINA</h1>
                 <h1 id="last-name">NGO.</h1> 
-            </div>
+            </article>
         </main>
       
-        <!-- line break -->
-        <div id="nav-break"></div>
+        <!-- section line break -->
+        <figure class="section-break" ></figure>
       
 
         <!-- LOWER INFO SECTION -->
         <footer id="home-footer">
+
+            <!-- job titles -->
             <section id="job-title">
                 <h5>FULL STACK DEVELOPER</h5>
                 <h5>DIGITAL DESIGNER</h5>
                 <h5>3D ARTIST</h5>
             </section>
 
+            <!-- social media links -->
             <section id="social">
                 <a href="https://www.linkedin.com/home?originalSubdomain=au" target="_blank">
-                    <div class="social-icon">
-                        <img src="res/linkedIn_logo.png" alt="">
-                    </div>
+                    <figure class="social-icon">
+                        <img src="res/linkedIn_logo.png" alt="linkedin logo link">
+                    </figure>
                 </a>
 
                 <a href="https://github.com/nlina-0" target="_blank">
-                    <div class="social-icon">
-                        <img src="res/ghithub_logo.png" alt="">
-                    </div>
+                    <figure class="social-icon">
+                        <img src="res/ghithub_logo.png" alt="ghit hub logo link">
+                    </figure>
                 </a>
             </section>
         </footer>
