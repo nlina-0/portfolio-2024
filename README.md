@@ -24,7 +24,7 @@ The purpose of this portfolio website is (use as a contact point…) that can be
 - When the user is in mobile display, the navigation bar will collapse into a hamburger icon (created in css) to the left and only the page title will remain to the right. By doing this, the navigation bar will look less condensed and cluttered, thereby keeping a clean and minimal aesthetics when in mobile display mode, consequently improving user experience. 
 
 
-#### Manu page - Mobile (mockup)
+#### Menu page - Mobile (mockup)
 ![menu page for mobile display](docs/mobile_menu.png)
 
 - During mobile display mode, when the hamburger icon is clicked, the user will be directed to a new page clearly displaying all options to navigate to. 
@@ -46,21 +46,21 @@ All sections in the home page are combined to take up 100% of viewport height. S
 
 #### Home page - Mobile (mockup)
 
-<img src="docs/home_mobile.png" alt="home page mobile display mockup">
+<img src="docs/home_mobile.png" alt="home page mobile display mockup" width="300px">
 
 <br></br>
 
 #### Home page - Tablet (mockup)
 
-<img src="docs/home_tablet.png" alt="home page tablet display mockup">
+<img src="docs/home_tablet.png" alt="home page tablet display mockup" width="500px">
 
-- Initially during the mockup stages of the design, the nagivation bar was meant to remain collapsed as a hamburger icon in tablet display as it does during mobile display. However, when implementing the design, the top of the page looked too empty, throwing off the visual balance of all the elements. So, the tablet display has the same navigation features as the desktop display.
+- Initially during the mockup stages of the website in tablet display, the nagivation bar was designed to remain collapsed as a hamburger icon as it does during mobile display. However, when implementing the design, the top of the page looked too empty, throwing off the visual balance of all the elements. So, the tablet display has the same navigation features as the desktop display.
 
 <br></br>
 
 #### Home page - Desktop (mockup)
 
-<img src="docs/home_desktop.png" alt="home page desktop display mockup">
+<img src="docs/home_desktop.png" alt="home page desktop display mockup" width="600px">
 
 
 <br></br>
@@ -77,16 +77,88 @@ Originally, the design of the website was to use inverted colours for every seco
 
 #### About - Mobile (mockup)
 
-<img src="docs/about_mobile.png" alt="about page mobile display mockup" height="500px">
+<img src="docs/about_mobile.png" alt="about page mobile display mockup" width="200px">
 
 #### About - Tablet (mockup)
 
-<img src="docs/about_tablet.png" alt="about page tablet display mockup" height="500px">
+<img src="docs/about_tablet.png" alt="about page tablet display mockup" width="300px">
 
 #### About - Desktop (mockup)
 
-<img src="docs/about_desktop.png" alt="about page desktop display mockup" height="500px">
+<img src="docs/about_desktop.png" alt="about page desktop display mockup" width="400px">
+
 
 <br></br>
 
 ### Work Page
+
+After completeing the about page, I decided to revisit the design of the work page and follow the more minimalistic approach using borders to separate sections rather than color blocks. 
+
+#### Work - Mobile (mockup 1)
+
+<img src="docs/work_mobile_1.png" alt="about page mobile display mockup" width="200px">
+
+#### Work - Mobile (mockup 2)
+
+<img src="docs/work_mobile_2.png" alt="about page mobile display mockup" width="200px">
+
+#### Work - Tablet (mockup 1)
+
+<img src="docs/work_tablet_1.png" alt="about page mobile display mockup" width="300px">
+
+#### Work - Tablet (mockup 2)
+
+<img src="docs/work_tablet_2.png" alt="about page mobile display mockup" width="300px">
+
+#### Work - Desktop (mockup 1)
+
+<img src="docs/work_desktop_1.png" alt="about page mobile display mockup" width="800px">
+
+#### Work - Desktop (mockup 2)
+
+<img src="docs/work_desktop_2.png" alt="about page mobile display mockup" width="800px">
+
+
+<br></br>
+
+### Blog Index
+
+#### Blog Index - Mobile (mockup)
+
+<img src="docs/blogIndex_mobile.png" alt="blog mobile mockup" width="200px">
+
+#### Blog Index - Tablet (mockup)
+
+<img src="docs/blogIndex_tablet.png" alt="blog tablet mockup" width="300px">
+
+#### Blog Index - Desktop (mockup)
+
+<img src="docs/blogIndex_desktop.png" alt="blog desktop mockup" width="800px">
+
+
+<br></br>
+
+### Blog Post
+
+#### Blog Post - Mobile (mockup)
+
+<img src="docs/blogPost_mobile.png" alt="blog mobile mockup" width="200px">
+
+#### Blog Post - Tablet (mockup)
+
+<img src="docs/blogPost_tablet.png" alt="blog tablet mockup" width="300px">
+
+#### Blog Post - Desktop (mockup)
+
+<img src="docs/blogPost_desktop.png" alt="blog desktop mockup" width="800px">
+
+
+<br></br>
+
+### Colours & Fonts
+
+### Site Map
+
+### Target Audience
+
+### Tech Stack
