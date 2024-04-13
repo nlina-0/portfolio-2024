@@ -56,8 +56,11 @@ h5 {
     border: 1px solid #000000;
 }
 
+/* INTERESTING */
 /* OVERALL PAGE FLOW, allocated to all pages */
-article {
+/* article */
+#about-page,
+#blog-page {
     display: flex;
     flex-wrap: wrap;
 }
@@ -137,6 +140,10 @@ h4 a {
     height: 100vh;
 }
 
+li{
+    text-align: center;
+}
+
 #menu-page a {
     color: #E0E0E0;
 }
@@ -148,7 +155,7 @@ h4 a {
     letter-spacing: 3px;
 }
 
-/* cancel icon drawing */
+/* cancel icon drawing - returns user to previous page*/
 #cancel {
     display: flex;
     flex-direction: column;
@@ -248,12 +255,14 @@ h4 a {
 
 /* WORK PAGE */
 
+/* setting overall page flow */
 #work-main {
     display: flex;
     flex-direction: column; 
     width: 100vw;
 }
 
+/* setting content flow */
 .work-section:nth-child(1){
     display: flex;
     flex-direction: column;
@@ -261,6 +270,7 @@ h4 a {
     width: 100%;
 }
 
+/* setting content flow */
 .work-section:nth-child(2){
     display: flex;
     flex-direction: column;
@@ -275,8 +285,6 @@ h4 a {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    /* background-color: red; */
 }
 
 /* division lines for each section */
@@ -294,6 +302,7 @@ h4 a {
     background-color: #131313;
 }
 
+/* setting content flow for list items */
 .details {
     display: flex;
     padding: 8px 20px 20px 0;
@@ -309,10 +318,17 @@ h4 a {
     width: 95%;
 }
 
+/* setting list items in columns and adding margins */
 #title-stack {
     display: flex;
     flex-direction: column;
     margin: 20px 20px 40px 15px;
+}
+
+/* putting list of ncompany name and job title into columns */
+.name {
+    display: flex;
+    flex-direction: column;
 }
 
 /* revisit for font sizes */
@@ -322,7 +338,7 @@ h4 a {
     margin-bottom: 4px;
 }
 
-/* resume button */
+/* resume button - container*/
 #resume-button {
     width: 100%;
     display: flex;
@@ -330,6 +346,7 @@ h4 a {
     margin-bottom: 20px;
 }
 
+/* resume button drawing */
 #button-draw {
     width: 95%;
     height: 50px;
@@ -340,11 +357,11 @@ h4 a {
     align-items: center;
 }
 
+/* when mouse hovers over resume button colors will invert */
 #button-draw:hover {
     background-color: #000000;
     color: #E0E0E0;
 }
-
 
 
 
@@ -356,11 +373,14 @@ body{
     overflow-x: hidden;
 }
 
+/* setting overall page flow */
 #about-page {
     display: flex;
     justify-content: center;
 }
 
+
+/* setting flow of sections for main content */
 #about {
     display: flex;
     flex-direction: column;
@@ -453,7 +473,6 @@ img {
     justify-content: center;
     align-items: end;
     width: 100vw;
-    /* margin-top: 20vw; */
     border-top: 1px solid black;
 }
 
@@ -470,8 +489,11 @@ img {
 /* page title */
 #blog-header {
     width: 100vw;
-    height: 300px;
+    /* height: 300px; */
+    height: 200px;
     padding-top: 30px;
+    margin-left: 10px;
+    /* background-color: red; */
 }
 
 /* division lines for each section */
@@ -486,7 +508,8 @@ img {
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-auto-rows: 200px;
+    /* grid-auto-rows: 200px; */
+    grid-auto-rows: 175px;
 }
 
 /* blog post child of index container */
@@ -505,7 +528,8 @@ img {
 /* container that has the title, publish date and summary of post */
 .post-detail {
     padding-top: 20px;
-    padding-bottom: 20%;
+    /* padding-bottom: 20%; */
+    /* background-color: red; */
 }
 
 /* text styling for title of blog posts */
@@ -690,11 +714,13 @@ img {
 
     /* ABOUT PAGE - TABLET BREAK */
 
+    /* divides paragraph into 2 columnms */
     #about-para {
         column-count: 2;
         column-gap: 40px;
     }
 
+    /* divides content into 2 columns */
     #about-art,
     #about-health {
         grid-template-columns: repeat(2, 1fr);
@@ -734,11 +760,12 @@ img {
 
 
 
-    /* BLOG PAGE - TABLET BREAK */
+    /* BLOG INDEX - TABLET BREAK */
 
-     /* blog list splits into 2 columns */
+     /* blog list splits into 2 columns, row height adjusted */
     #blog-main {
         grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 200px;
     }
 
 
