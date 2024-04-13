@@ -60,15 +60,18 @@ article {
     flex-wrap: wrap;
 }
 
+
+
+/* FOOTER */
 /* spacing for bottom of page */
 footer {
-    height: 6vh;   
+    /* height: 6vh;    */
+    height: 50px;
 }
 
 footer p {
     margin-bottom: 10px;
 }
-
 
 
 
@@ -78,7 +81,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 6vh;
+    /* height: 6vh; */
+    height: 50px;
     flex: 100vw;
 }
 
