@@ -68,6 +68,25 @@ All sections in the home page are combined to take up 100% of viewport height. S
 
 ### About Page
 
+The about page consist of 2 sections:
+
+1. About me section.
+2. Hobbies and interests section that has 2 sub sections. 
+
+Originally, the design of the website was to use inverted colours for every second section to create a clear distinction. However, as it was being developed, the ability to interact with the website responsively proved that the black blockouts were too contrasty. This led to a decision the minimal consistency seen in the home page, as it only uses a border to separate sections. 
+
 #### About - Mobile (mockup)
 
-<img src="docs/about_mobile.png" alt="home page mobile display mockup">
+<img src="docs/about_mobile.png" alt="about page mobile display mockup" height="500px">
+
+#### About - Tablet (mockup)
+
+<img src="docs/about_tablet.png" alt="about page tablet display mockup" height="500px">
+
+#### About - Desktop (mockup)
+
+<img src="docs/about_desktop.png" alt="about page desktop display mockup" height="500px">
+
+<br></br>
+
+### Work Page
