@@ -8,6 +8,14 @@ The purpose of this portfolio website is (use as a contact point…) that can be
 
 <br></br>
 
+### Target Audience
+
+<br></br>
+
+### Site Map
+
+<br></br>
+
 ## Functionality / Features
 
 ### Navigation
@@ -43,6 +51,8 @@ The home page consist of 3 sections:
 3. The footer - contains job title and social media links.
 
 All sections in the home page are combined to take up 100% of viewport height. Since the main purpose of this page is to introduce myself, the introduction takes up majority of the screen space. The footer contains job titles and social media links represented as circles. 
+
+- **show circle social icons**
 
 #### Home page - Mobile (mockup)
 
@@ -156,9 +166,5 @@ After completeing the about page, I decided to revisit the design of the work pa
 <br></br>
 
 ### Colours & Fonts
-
-### Site Map
-
-### Target Audience
 
 ### Tech Stack
