@@ -119,7 +119,7 @@ The hobbies & interests sections use the same component, it icludes an image wit
 
 <img src="docs/section_line_break.png" alt="section line break" width="600px">
 
-- These line breaks created using CSS code are used throughout the website to separate different sections. It expands across the entire width of the page.
+- The section line break was created using CSS code is used throughout the website to separate different sections. It expands across the entire width of the page.
 - Originally it was only used for the home page, but was implemented to all other pages to maintain consistency. It became an ideal solution to separating content. 
 
 #### About - Mobile (mockup)
