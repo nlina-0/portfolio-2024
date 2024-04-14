@@ -25,7 +25,7 @@ The target audience for this online portfolio would be potential employers that 
 - The blog index has a list of links that leads to separate blog posts. 
 - The work page has a resume button linking to a PDF file that opens in a new tab. 
 
-<img src="docs/sitemap.png" alt="site map">
+<img src="docs/sitemap_2.png" alt="site map">
 
 <br></br>
 
