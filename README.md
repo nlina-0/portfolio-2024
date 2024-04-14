@@ -1,5 +1,9 @@
 # TIA2 - Lina Ngo  
 
+## GitHub repo
+
+[Lina Ngo Portfolio 2024](https://github.com/nlina-0/portfolio-2024)
+
 <br></br>
 
 ## Purpose
