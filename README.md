@@ -4,16 +4,22 @@
 
 ## Purpose
 
-The purpose of this portfolio website is (use as a contact point…) that can be shared with potential employers. It contains content about myself as a growing web development professional, my education and career history, and my contact information. Displays my skills through the build of the website itself.
-
-The purpose of this online portfolio is to provide information about myself as an aspiring web developer. It will contain information about my skills, interests, professional knowledge and a showcase of work. 
+The purpose of this online portfolio is to provide information about myself as an aspiring web developer. It will contain content about my education and career history, skills and interests, as well as professional knowledge and a showcase of work. The website itself will also act as a demonstration of my skills.
 
 ## Target Audience
 
-- Potential Employers 
-- IT recruitment
+The target audience for this online portfolio would be potential employers that include:
+
+- Senior developers
+- Chief technical officers
+- IT recruitment agencies
 
 ## Site Map
+
+- A navigation bar sits at the top of the website which allows users to navigate to the home, about, work and blog index page. This navigation bar remains consistent across all pages when in tablet and desktop display mode.
+- When in mobile display, the navigation is displayed as an icon that links to a separate page that displays options to move to the home, about, work and blog index page. 
+- The blog index has a list of links with a publish date and title, each link leads to separate blog posts. 
+- The work page has a resume button linking to a PDF file that opens in a new tab. 
 
 <img src="docs/sitemap.png" alt="site map">
 
@@ -23,16 +29,20 @@ The purpose of this online portfolio is to provide information about myself as a
 
 ### Navigation
 
+The navigation bar allows users to move to the four main sections of the website which include the home, about, work and blog index page.
+
 #### Navigation bar - Tablet and Desktop (mockup)
 ![navigation bar mockup](docs/navigation.png)
 
-- The navigation bar remains static at the top of the page. It contains a logo to the left and the options to navigate to on the right.  
+- The navigation bar remains static at the top of the page. It contains a logo to the left and the options to navigate to different pages on the right.  
 - The navigation bar remains consistent throughout all pages, except when in mobile display.
 
 #### Navigation bar - Mobile (mockup)
 ![navigation bar for mobile display mockup](docs/navigation_mobile.png)
 
-- When the user is in mobile display, the navigation bar will collapse into a hamburger icon (created in css) to the left and only the page title will remain to the right. By doing this, the navigation bar will look less condensed and cluttered, thereby keeping a clean and minimal aesthetics when in mobile display mode, consequently improving user experience. 
+- When the user is in mobile display, the navigation bar will collapse into a hamburger icon (created in css) that is situated to the left. Once clicked, the user will be directed to a separate page that clearly displays the four main pages to navigate to. Only the page title remains to the right. By doing this, the navigation bar will look less condensed and cluttered during mobile display, thereby keeping a clean and minimal aesthetics, consequently improving user experience.
+
+- The **X** button at the top left of the page (created using css) will return user to the previous page.
 
 
 #### Menu page - Mobile (mockup)
@@ -40,9 +50,6 @@ The purpose of this online portfolio is to provide information about myself as a
 
 #### Menu page - Mobile (screenshot)
 <img src="docs/mobile_menu_ss.png" alt="menu mobile screenshot" width="200px">
-
-- During mobile display mode, when the hamburger icon is clicked, the user will be directed to a new page clearly displaying all options to navigate to. 
-- The **X** button at the top left of the page (created using css) will return user to the previous page.
 
 
 <br></br>
@@ -55,7 +62,7 @@ The home page consist of 2 sections:
 1. Main element - contains the introduction
 2. The footer - contains job title and social media links.
 
-All sections in the home page are combined to take up 100% of viewport height. Since the main purpose of this page is to display the introduction and not much else, it takes up majority of the screen space. The footer contains job titles and social media links represented as its respective logos. Intentionally there is no vertical scrolling to maintain simplicity of the page.
+The purpose of the home page is to introduce the web developer in a professional and clean aesthetic. All sections in the home page are combined to take up 100% of viewport height as a way to remove vertical scrolling and keep the focus on the introduction. The footer contains the job titles and social media links. The social media links open in a new tab to LinkedIn and Ghithub profiles. 
 
 #### Home - Social Media Links
 <img src="docs/home_social.png" alt="home social media links" width="150px">
