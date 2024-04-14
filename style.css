@@ -46,8 +46,6 @@ h5 {
 /* self brand logo, only appears when not in mobile view */
 #logo {
     position: absolute;
-    /* width: 3.5vh;
-    height: 3.5vh; */
     width: 30px;
     height: 30px;
     margin-left: 20px;
@@ -56,9 +54,7 @@ h5 {
     border: 1px solid #000000;
 }
 
-/* INTERESTING */
 /* OVERALL PAGE FLOW, allocated to all pages */
-/* article */
 #about-page,
 #blog-page {
     display: flex;
@@ -70,7 +66,6 @@ h5 {
 /* FOOTER */
 /* spacing for bottom of page */
 footer {
-    /* height: 6vh;    */
     height: 50px;
 }
 
@@ -86,17 +81,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* height: 6vh; */
     height: 50px;
     flex: 100vw;
     border-bottom: 1px solid black;
 }
-
-/* #nav-break{
-    width: 100%;
-    height: 1px;
-    background-color: black;
-} */
 
 /* hamburger icon drawing */
 #hamburger {
@@ -121,7 +109,7 @@ nav {
     margin: 1vw 2vw;
 }
 
-/* targets all links useing h4 */
+/* targets all links using h4 */
 h4 a {
     font-weight: 400;
 }
@@ -319,7 +307,7 @@ li{
 }
 
 .work-title {
-    margin: 50px 0 40px 10px;
+    margin: 50px 0 30px 10px;
     width: 95%;
 }
 
@@ -336,14 +324,11 @@ li{
     flex-direction: column;
 }
 
-/* revisit for font sizes */
 .name p {
-    /* font-size: 13px; */
-    font-size: 1rem;
     margin-bottom: 4px;
 }
 
-/* resume button - container*/
+/* resume button - container */
 #resume-button {
     width: 100%;
     display: flex;
@@ -494,11 +479,9 @@ img {
 /* page title */
 #blog-header {
     width: 100vw;
-    /* height: 300px; */
     height: 200px;
     padding-top: 30px;
     margin-left: 10px;
-    /* background-color: red; */
 }
 
 /* division lines for each section */
@@ -513,7 +496,6 @@ img {
     width: 100vw;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    /* grid-auto-rows: 200px; */
     grid-auto-rows: 175px;
 }
 
@@ -533,8 +515,6 @@ img {
 /* container that has the title, publish date and summary of post */
 .post-detail {
     padding-top: 20px;
-    /* padding-bottom: 20%; */
-    /* background-color: red; */
 }
 
 /* text styling for title of blog posts */
@@ -602,17 +582,6 @@ img {
     flex-direction: column;
 }
 
-/* about myself - container for paragraph  */
-/* #about-para {
-    margin: 70px 0 30px 0;
-    line-height: 1.4;
-} */
-
-/* about myself - space between paragraphs */
-/* #about-para p {
-    margin-bottom: 20px;
-} */
-
 #post-title {
     margin-bottom: 70px;
 }
@@ -650,18 +619,21 @@ img {
         font-weight: 400;
     }
     
+    /* removes navigation list */
     .nav-name {
         display: none;
     }
 
+    /* removes logo in navigation */
     #logo {
         display: none;
     }
 
 
 
-    /* BLOG PAGE - MOBILE BREAK*/
+    /* BLOG INDEX - MOBILE BREAK*/
 
+    /* removes border to right used in the display of blog lists */
     .post-border {
         display: none;
     }
@@ -674,6 +646,9 @@ img {
 /* TABLET DISPLAY */
 @media only screen and (min-width: 800px) {
 
+    /* NAVIGATION - TBALET BREAK */
+
+    /* removes page title in navigation bar */
     .page-title {
         display: none;
     }
@@ -799,11 +774,7 @@ img {
     .blog-post {
         width: 80vw;
     }
-
-
-
 }
-
 
 
 

@@ -4,7 +4,7 @@
 
 ## Purpose
 
-The purpose of this online portfolio is to provide information about myself as an aspiring web developer. It will contain content about my education and career history, skills and interests, as well as professional knowledge and a showcase of work. The website itself will also act as a demonstration of my skills.
+The purpose of this online portfolio is to provide information about myself as an aspiring web developer. It will contain content about my education and career history, skills and interests, as well as professional knowledge and a showcase of work. The website itself will also act as a demonstration of my skills as a web developer.
 
 ## Target Audience
 
@@ -32,12 +32,14 @@ The target audience for this online portfolio would be potential employers that 
 The navigation bar allows users to move to the four main sections of the website which include the home, about, work and blog index page.
 
 #### Navigation bar - Tablet and Desktop (mockup)
+
 ![navigation bar mockup](docs/navigation.png)
 
 - The navigation bar remains static at the top of the page. It contains a logo to the left and the options to navigate to different pages on the right.  
 - The navigation bar remains consistent throughout all pages, except when in mobile display.
 
 #### Navigation bar - Mobile (mockup)
+
 ![navigation bar for mobile display mockup](docs/navigation_mobile.png)
 
 - When the user is in mobile display, the navigation bar will collapse into a hamburger icon (created in css) that is situated to the left. Once clicked, the user will be directed to a separate page that clearly displays the four main pages to navigate to. Only the page title remains to the right. By doing this, the navigation bar will look less condensed and cluttered during mobile display, thereby keeping a clean and minimal aesthetics, consequently improving user experience.
@@ -46,9 +48,11 @@ The navigation bar allows users to move to the four main sections of the website
 
 
 #### Menu page - Mobile (mockup)
+
 <img src="docs/mobile_menu.png" alt="menu mobile mockup" width="200px">
 
 #### Menu page - Mobile (screenshot)
+
 <img src="docs/mobile_menu_ss.png" alt="menu mobile screenshot" width="200px">
 
 
@@ -65,6 +69,7 @@ The home page consist of 2 sections:
 2. The footer - contains job title and social media links.
 
 #### Home - Social Media Links
+
 <img src="docs/home_social.png" alt="home social media links" width="150px">
 
 
@@ -121,6 +126,7 @@ Originally, the design of the website was to use inverted colours for every seco
 <img src="docs/about_tablet.png" alt="about tablet mockup" width="300px">
 
 - When the screen size increased, the sections split into two columns to fit more content horizontally on the page. This was done to avoid excessive vertical scrolling.
+
 - The images were made to maintain the same width as the column, creating uniformity throughout the page.
 
 #### About - Tablet (screenshot)
@@ -149,7 +155,6 @@ The purpose of the work page is to display education and work history, as well a
 - Work history
 
 After redesigning the **about page** that uses borders rather than colour blocks, the other pages were revisited and redesigned to maintain consistency.
-
 
 #### Resume button
 
@@ -291,7 +296,7 @@ The image blocks will stretch to fill the width of the text in order to maintain
 
 ## Fonts
 
-- Fonts chosen during the mockup stage allowed for creative freedom in Figma, which led to the use of interesting fonts. However, after researching the accesibiility of web, I decided to choose a font that was accessible to all in order to maintain consistency to all users.
+- Fonts chosen during the mockup stage allowed for creative freedom in Figma, which led to the use of interesting fonts. However, after researching the accesibiility for web, I decided to choose a font that was accessible to all in order to maintain consistency to all users.
 
 ## Tech Stack
 
