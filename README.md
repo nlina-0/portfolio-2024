@@ -133,6 +133,12 @@ After completeing the about page, I decided to revisit the design of the work pa
 
 ### Blog Index
 
+The blog index uses css grids to create columns depending on screen size. This is so that users can easily view all blog posts to read.
+
+- Mobile - 1 column
+- Tablet - 2 columns
+- Desktop - 3 columns
+
 #### Blog Index - Mobile (mockup)
 
 <img src="docs/blogIndex_mobile.png" alt="blog mobile mockup" width="200px">
@@ -150,21 +156,48 @@ After completeing the about page, I decided to revisit the design of the work pa
 
 ### Blog Post
 
+The blog post page consist of 1 main section that contains the images and body of text. Images and text can be rearranged according to content.
+
+The image blocks will stretch to fill the width of the text of content to maintain a sense of flow throughout the page. Images were given a maximum height as to not overwhelm the visual balance of the page.
+
 #### Blog Post - Mobile (mockup)
 
 <img src="docs/blogPost_mobile.png" alt="blog mobile mockup" width="200px">
+
+#### Blog Post - Mobile (screenshot)
+
+<img src="docs/blogPost_mobile_ss.png" alt="blog mobile mockup" width="200px">
 
 #### Blog Post - Tablet (mockup)
 
 <img src="docs/blogPost_tablet.png" alt="blog tablet mockup" width="300px">
 
+- The original design of this page was inspired by newspaper layouts. The idea was to restrict the amount of words to each line to allow for easier digestion of informaiton.
+- After revising, I decided to maintain the uniformity of each display to have one column for the body of text, as the amount of information added to each new blog post would be unknown. If the two columns were kept, the break points of the columns would be unknown and inconsistent.   
+
+#### Blog Post - Tablet (screenshot)
+
+<img src="docs/blogPost_tablet_ss.png" alt="blog tablet mockup" width="400px">
+
 #### Blog Post - Desktop (mockup)
 
 <img src="docs/blogPost_desktop.png" alt="blog desktop mockup" width="800px">
 
+- As the screen widens, the body of content will reach a maximum width to avoid the stretching of content. Ensuring that the page is easy to read. 
+
+#### Blog Post - Desktop (screenshot)
+
+<img src="docs/blogPost_desktop_ss.png" alt="blog post desktop screenshot" width="800px">
 
 <br></br>
 
-### Colours & Fonts
+### Fonts
+
+- Fonts chosen during the mockup stage allowed for creative freedom in Figma, which led to the use of interesting fonts. However, after researching the accesibiility of web, I decided to choose a font that was accessible to all in order to maintain consistency to all users.
+
+<br></br>
 
 ### Tech Stack
+
+- HTML
+- CSS

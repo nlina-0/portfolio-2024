@@ -128,7 +128,7 @@ h4 a {
 
 
 
-/* MENU PAGE */
+/* MENU PAGE - only for mobile display*/
 
 #menu-page {
     display: flex;
@@ -162,7 +162,7 @@ li{
     justify-content: center;
     position: absolute;
     left: 4vw;
-    top: 4vw;
+    top: 6vw;
 }
 
 #cancel-line-1 {
@@ -790,6 +790,11 @@ img {
         font-size: 18px;
     }
 
+    /* width of content */
+    .blog-post {
+        width: 80vw;
+    }
+
 
 
 }
@@ -920,6 +925,7 @@ img {
     /* BLOG POST - DESKTOP BREAK */
     .blog-post {
         width: 60vw;
+        max-width: 1000px;
         padding: 4vw 0 30px 0;
     }
 
@@ -967,7 +973,7 @@ img {
     /* BLOG PAGE - POST */
 
     .blog-post {
-        width: 40vw;
+        width: 50vw;
     }
 
     /* increases paragraph font size */
