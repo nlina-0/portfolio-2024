@@ -9,7 +9,7 @@ body {
     background-color: #E0E0E0;
 }
 
-/* link styling */
+/* link decoration */
 a {
     text-decoration-line: none;
     color: black;
@@ -473,7 +473,7 @@ img {
     justify-content: center;
     align-items: end;
     width: 100vw;
-    border-top: 1px solid black;
+    /* border-top: 1px solid black; */
 }
 
 
@@ -512,7 +512,7 @@ img {
     grid-auto-rows: 175px;
 }
 
-/* blog post child of index container */
+/* blog post, child of blog index container */
 .post {
     width: 100%;
     border: 1px solid rgb(0, 0, 0);
@@ -570,14 +570,14 @@ img {
     align-items: end;
     width: 100vw;
     margin-top: 20vw;
-    border-top: 1px solid black;
+    /* border-top: 1px solid black; */
 }
 
 
 
 /* BLOG POST */
 
-.blog-para p {
+.blog-content p {
     margin-bottom: 25px;    
     line-height: 1.4;
 }
@@ -588,7 +588,6 @@ img {
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    /* background-color: red; */
 }
 
 .blog-post {
@@ -596,19 +595,18 @@ img {
     padding: 4vw 0 30px 0;
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
 }
 
 /* about myself - container for paragraph  */
-#about-para {
+/* #about-para {
     margin: 70px 0 30px 0;
     line-height: 1.4;
-}
+} */
 
 /* about myself - space between paragraphs */
-#about-para p {
+/* #about-para p {
     margin-bottom: 20px;
-}
+} */
 
 #post-title {
     margin-bottom: 70px;
@@ -618,10 +616,18 @@ img {
     margin-bottom: 30px;
 }
 
+/* text styling for publish date */
 .publish h4 {
     font-weight: 400;
     letter-spacing: -1px;
     margin-bottom: 10px;
+}
+
+.post-subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: 65px;
+    margin-bottom: 30px;
 }
 
 
@@ -779,6 +785,11 @@ img {
         max-height: 500px;
     }
 
+    /* increases paragraph font size */
+    .blog-content p {
+        font-size: 18px;
+    }
+
 
 
 }
@@ -908,7 +919,7 @@ img {
 
     /* BLOG POST - DESKTOP BREAK */
     .blog-post {
-        width: 70vw;
+        width: 60vw;
         padding: 4vw 0 30px 0;
     }
 
@@ -956,7 +967,12 @@ img {
     /* BLOG PAGE - POST */
 
     .blog-post {
-        width: 50vw;
+        width: 40vw;
+    }
+
+    /* increases paragraph font size */
+    .blog-content p {
+        font-size: 20px;
     }
 
 }
