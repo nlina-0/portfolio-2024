@@ -8,12 +8,12 @@ The purpose of this portfolio website is (use as a contact point…) that can be
 
 The purpose of this online portfolio is to provide information about myself as an aspiring web developer. It will contain information about my skills, interests, professional knowledge and a showcase of work. 
 
-### Target Audience
+## Target Audience
 
 - Potential Employers 
 - IT recruitment
 
-### Site Map
+## Site Map
 
 <br></br>
 
@@ -283,11 +283,11 @@ The image blocks will stretch to fill the width of the text in order to maintain
 
 <br></br>
 
-### Fonts
+## Fonts
 
 - Fonts chosen during the mockup stage allowed for creative freedom in Figma, which led to the use of interesting fonts. However, after researching the accesibiility of web, I decided to choose a font that was accessible to all in order to maintain consistency to all users.
 
-### Tech Stack
+## Tech Stack
 
 - HTML
 - CSS
