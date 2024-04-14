@@ -15,6 +15,8 @@ The purpose of this online portfolio is to provide information about myself as a
 
 ## Site Map
 
+<img src="docs/sitemap.png" alt="site map">
+
 <br></br>
 
 ## Functionality / Features
