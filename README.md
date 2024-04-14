@@ -17,8 +17,8 @@ The target audience for this online portfolio would be potential employers that 
 ## Site Map
 
 - A navigation bar sits at the top of the website which allows users to navigate to the home, about, work and blog index page. This navigation bar remains consistent across all pages when in tablet and desktop display mode.
-- When in mobile display, the navigation is displayed as an icon that links to a separate page that displays options to move to the home, about, work and blog index page. 
-- The blog index has a list of links with a publish date and title, each link leads to separate blog posts. 
+- When in mobile display, the navigation is displayed as an icon that links to a separate menu page that displays options to navigate to the home, about, work and blog index page. 
+- The blog index has a list of links that leads to separate blog posts. 
 - The work page has a resume button linking to a PDF file that opens in a new tab. 
 
 <img src="docs/sitemap.png" alt="site map">
@@ -42,7 +42,7 @@ The navigation bar allows users to move to the four main sections of the website
 
 - When the user is in mobile display, the navigation bar will collapse into a hamburger icon (created in css) that is situated to the left. Once clicked, the user will be directed to a separate page that clearly displays the four main pages to navigate to. Only the page title remains to the right. By doing this, the navigation bar will look less condensed and cluttered during mobile display, thereby keeping a clean and minimal aesthetics, consequently improving user experience.
 
-- The **X** button at the top left of the page (created using css) will return user to the previous page.
+- When the user enters the menu page the **X** button at the top left of the page (created using css) will return user to the previous page.
 
 
 #### Menu page - Mobile (mockup)
@@ -57,12 +57,12 @@ The navigation bar allows users to move to the four main sections of the website
 
 ### Home Page
 
+The purpose of the home page is to introduce the web developer in a professional and clean manner. All sections in the home page are combined to take up 100% of viewport height as a way to remove vertical scrolling and keep the focus on the introduction. The footer contains the job titles and social media links. The social media links open in a new tab to LinkedIn and Ghithub profiles. 
+
 The home page consist of 2 sections:
 
 1. Main element - contains the introduction
 2. The footer - contains job title and social media links.
-
-The purpose of the home page is to introduce the web developer in a professional and clean aesthetic. All sections in the home page are combined to take up 100% of viewport height as a way to remove vertical scrolling and keep the focus on the introduction. The footer contains the job titles and social media links. The social media links open in a new tab to LinkedIn and Ghithub profiles. 
 
 #### Home - Social Media Links
 <img src="docs/home_social.png" alt="home social media links" width="150px">
@@ -76,23 +76,20 @@ The purpose of the home page is to introduce the web developer in a professional
 
 <img src="docs/home_mobile_ss.png" alt="home mobile screenshot" width="200px">
 
-<br></br>
 
 #### Home - Tablet (mockup)
 
-<img src="docs/home_tablet.png" alt="home page tablet display mockup" width="300px">
+<img src="docs/home_tablet.png" alt="home tablet mockup" width="300px">
 
-- Initially during the mockup stages of the website in tablet display, the nagivation bar was designed to remain collapsed as a hamburger icon as it does during mobile display. However, when implementing the design, the top of the page looked too empty, throwing off the visual balance of all the elements. So, the tablet display has the same navigation features as the desktop display.
+- Initially the home tablet display was to have the same navigation design as the mobile display. However, when implementing the design, the size of the tablet display created a lot of empty space, throwing off the visual balance of the elements. So, the navigation feature used for the desktop display is also used for the tablet display.
 
 #### Home - Tablet (screenshot)
 
 <img src="docs/home_tablet_ss.png" alt="home tablet screenshot" width="300px">
 
-<br></br>
-
 #### Home page - Desktop (mockup)
 
-<img src="docs/home_desktop.png" alt="home page desktop display mockup" width="600px">
+<img src="docs/home_desktop.png" alt="home desktop mockup" width="600px">
 
 #### Home - Desktop (screenshot)
 
@@ -104,12 +101,12 @@ The purpose of the home page is to introduce the web developer in a professional
 
 ### About Page
 
-The about page consist of 2 sections:
+The purpose of the about page is to provide information about myself as an aspiring web developer and also my hobbies and interests. This is separated into two sections:
 
 1. About me 
 2. Hobbies and interests that has 2 sub sections. 
 
-Originally, the design of the website was to use inverted colours for every second section in order to create a clear distinction between content. However, when it was developed and interacted with the black blockouts became too visually heavy on the page and was not aesthetically pleasing. This led to a decision to maintain a minimal consistency seen in the home page, using only borders to separate sections. 
+Originally, the design of the website was to use inverted colours for every second section in order to create a clear distinction between content. However, when it was being developed the black blockouts became too visually jarring on the page and was not aesthetically pleasing. This led to a decision to maintain a minimal aesthetic seen in the home page, using only borders to separate sections. 
 
 #### About - Mobile (mockup)
 
@@ -128,13 +125,13 @@ Originally, the design of the website was to use inverted colours for every seco
 
 #### About - Tablet (screenshot)
 
-<img src="docs/about_tablet_ss.png" alt="about tablet screenshot" width="300px">
+<img src="docs/about_tablet_ss.png" alt="about tablet screenshot" width="400px">
 
 #### About - Desktop (mockup)
 
 <img src="docs/about_desktop.png" alt="about page desktop display mockup" width="400px">
 
-- Originally, the desktop display was designed using a four column structure. This was done to use the horizontal space given. By doing this, the **about text** was justified to the left of the page, while splitting into two columns. This is also done to the hobbies and interests sections to allow the image to take up more space (3 columns), emphasising its visual appeal. However, when the design was implemented, it was found that when the screen size decreased, even a little, the columns would become drastically slim thus creating an ugly display of text. This was mitgated by keeping the layout consistent with the tablet display. 
+- Originally, the desktop display was designed using a four column grid. This was done to use the extra horizontal space in desktop display. By doing this, the **about text** was justified to the left of the page, while splitting into two columns. The same thing applied to the hobbies and interests sections which allowed the images to take up more space (3 columns), emphasising its visual importance. However, when the design was implemented, it was found that when the screen size decreased, even a little, the columns would become drastically slim thus creating an ugly display of text. This was mitgated by keeping the layout consistent with the tablet display. 
 
 #### About - Desktop (screenshot)
 
@@ -145,13 +142,13 @@ Originally, the design of the website was to use inverted colours for every seco
 
 ### Work Page
 
-After redesigning the **about page** that uses borders rather than colour blocks, the other pages were revisited and redesigned in that manner for consistency.
+The purpose of the work page is to display education and work history, as well as having a link to a resume. This page is displayed in a list view. It consists of 3 sections:
 
-The **work page** consists of 3 sections:
-
-- Information about self, contains a resume link (This section was added later in the design process)
+- Information about self
 - Education history
 - Work history
+
+After redesigning the **about page** that uses borders rather than colour blocks, the other pages were revisited and redesigned to maintain consistency.
 
 
 #### Resume button
@@ -195,7 +192,7 @@ The **work page** consists of 3 sections:
 
 #### Work - Desktop (mockup 1)
 
-- To remove excessive vertical scrolling, the desktop display was designed to use the horizontal space. This was achieved using flexbox. 
+- To remove excessive vertical scrolling, the desktop display was designed to use the horizontal space provided with the size of the screen. This was achieved using flexbox. 
 
 <img src="docs/work_desktop_1.png" alt="about page mobile display mockup" width="800px">
 
@@ -212,12 +209,12 @@ The **work page** consists of 3 sections:
 
 ### Blog Index
 
-The **blog index** consists of 2 sections:
+The purpose of the **blog index** is to display a list of blog posts that display the publish date and title. It consists of 2 sections:
 
 - The header
-- The main content being the list of blog posts
+- The list of blog posts
 
-The blog index uses css grids for the main content in order to create columns depending on screen size. This reduces excessive empty space and allows users to easily view all listed blog posts.
+The blog index uses css grids for the list of blog posts in order to create columns depending on screen size. This reduces excessive empty space and allows users to easily view all listed blog posts.
 
 - Mobile - 1 column
 - Tablet - 2 columns
@@ -229,7 +226,7 @@ The blog index uses css grids for the main content in order to create columns de
 
 #### Blog Index - Mobile (screenshot)
 
-<img src="docs/blogIndex_mobile_ss.png" alt="blog mobile mockup" width="200px">
+<img src="docs/blogIndex_mobile_ss.png" alt="blog mobile screenshot" width="200px">
 
 #### Blog Index - Tablet (mockup)
 
@@ -237,7 +234,7 @@ The blog index uses css grids for the main content in order to create columns de
 
 #### Blog Index - Tablet (screenshot)
 
-<img src="docs/blogIndex_tablet_ss.png" alt="blog tablet mockup" width="400px">
+<img src="docs/blogIndex_tablet_ss.png" alt="blog tablet screenshot" width="400px">
 
 #### Blog Index - Desktop (mockup)
 
@@ -245,7 +242,7 @@ The blog index uses css grids for the main content in order to create columns de
 
 #### Blog Index - Desktop (screenshot)
 
-<img src="docs/blogIndex_desktop_ss.png" alt="blog desktop mockup" width="800px">
+<img src="docs/blogIndex_desktop_ss.png" alt="blog desktop screenshot" width="800px">
 
 
 <br></br>
@@ -274,7 +271,7 @@ The image blocks will stretch to fill the width of the text in order to maintain
 <img src="docs/blogPost_tablet.png" alt="blog tablet mockup" width="300px">
 
 - The original design of this page was inspired by newspaper layouts. The idea was to restrict the amount of words to each line for easier legibility.
-- After revising, it was decided to maintain the uniformity of one column for each display, as the break points for two columns would be unknown and inconsistent to each new post.
+- After revising, it was decided to maintain the uniformity of one column for each display, as the break points for two columns would be unknown and inconsistent to each new post added.
 
 #### Blog Post - Tablet (screenshot)
 
