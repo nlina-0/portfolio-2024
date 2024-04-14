@@ -8,14 +8,10 @@ The purpose of this portfolio website is (use as a contact point…) that can be
 
 The purpose of this online portfolio is to provide information about myself as an aspiring web developer. It will contain information about my skills, interests, professional knowledge and a showcase of work. 
 
-<br></br>
-
 ### Target Audience
 
 - Potential Employers 
 - IT recruitment
-
-<br></br>
 
 ### Site Map
 
@@ -138,7 +134,7 @@ Originally, the design of the website was to use inverted colours for every seco
 
 <br></br>
 
-## Work Page
+### Work Page
 
 After redesigning the **about page** that uses borders rather than colour blocks, the other pages were revisited and redesigned in that manner for consistency.
 
@@ -148,7 +144,6 @@ The **work page** consists of 3 sections:
 - Education history
 - Work history
 
-<br></br>
 
 #### Resume button
 
@@ -160,7 +155,6 @@ The **work page** consists of 3 sections:
 - It resizes when the width of the section changes. 
 - Colours invert when mouse is hovered over. 
 
-<br></br>
 
 #### Work - Mobile (mockup 1)
 
@@ -292,8 +286,6 @@ The image blocks will stretch to fill the width of the text in order to maintain
 ### Fonts
 
 - Fonts chosen during the mockup stage allowed for creative freedom in Figma, which led to the use of interesting fonts. However, after researching the accesibiility of web, I decided to choose a font that was accessible to all in order to maintain consistency to all users.
-
-<br></br>
 
 ### Tech Stack
 
