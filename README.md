@@ -113,6 +113,15 @@ The purpose of the about page is to provide information about myself as an aspir
 
 Originally, the design of the website was to use inverted colours for every second section in order to create a clear distinction between content. However, when it was being developed the black blockouts became too visually jarring on the page and was not aesthetically pleasing. This led to a decision to maintain a minimal aesthetic seen in the home page, using only borders to separate sections. 
 
+The hobbies & interests sections use the same component, it icludes an image with a caption, a title, sub-title and paragraph. 
+
+### Section Line breaks
+
+<img src="docs/section_line_break.png" alt="section line break" width="600px">
+
+- These line breaks created using CSS code are used throughout the website to separate different sections. It expands across the entire width of the page.
+- Originally it was only used for the home page, but was implemented to all other pages to maintain consistency. It became an ideal solution to separating content. 
+
 #### About - Mobile (mockup)
 
 <img src="docs/about_mobile.png" alt="about mobile mockup" width="200px">

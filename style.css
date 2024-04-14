@@ -21,7 +21,8 @@ h2,
 h3,
 h4,
 h5,
-p {
+p,
+figcaption {
     font-family: "roboto", sans-serif;
 }
 
@@ -39,6 +40,10 @@ h2 {
 
 h5 {
     line-height: 100%;
+}
+
+figcaption {
+    font-size: 11px;
 }
 
 
@@ -448,6 +453,11 @@ img {
     height: 100%;
 }
 
+#art-img,
+#health-img {
+    max-height: 50vh;
+}
+
 /* line division between sections */
 #about-page .line {
     width: 100%;
@@ -463,7 +473,6 @@ img {
     justify-content: center;
     align-items: end;
     width: 100vw;
-    /* border-top: 1px solid black; */
 }
 
 
