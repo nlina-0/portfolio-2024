@@ -23,7 +23,7 @@ The purpose of this portfolio website is (use as a contact point…) that can be
 #### Navigation bar - Tablet and Desktop (mockup)
 ![navigation bar mockup](docs/navigation.png)
 
-- The navigation bar remains at the top of the page. It contains a logo to the left and the options to navigate to on the right.  
+- The navigation bar remains static at the top of the page. It contains a logo to the left and the options to navigate to on the right.  
 - The navigation bar remains consistent throughout all pages, except when in mobile display.
 
 #### Navigation bar - Mobile (mockup)
@@ -36,7 +36,7 @@ The purpose of this portfolio website is (use as a contact point…) that can be
 ![menu page for mobile display](docs/mobile_menu.png)
 
 - During mobile display mode, when the hamburger icon is clicked, the user will be directed to a new page clearly displaying all options to navigate to. 
-- The **X** button at the top left of the page, created using css, will return user to the previous page.
+- The **X** button at the top left of the page (created using css) will return user to the previous page.
 
 
 <br></br>
@@ -44,33 +44,46 @@ The purpose of this portfolio website is (use as a contact point…) that can be
 
 ### Home Page
 
-The home page consist of 3 sections:
+The home page consist of 2 sections:
 
-1. Navigation Bar
-2. Main element - contains the introduction
-3. The footer - contains job title and social media links.
+1. Main element - contains the introduction
+2. The footer - contains job title and social media links.
 
-All sections in the home page are combined to take up 100% of viewport height. Since the main purpose of this page is to introduce myself, the introduction takes up majority of the screen space. The footer contains job titles and social media links represented as circles. 
+All sections in the home page are combined to take up 100% of viewport height. Since the main purpose of this page is to display the introduction and not much else, it takes up majority of the screen space. The footer contains job titles and social media links represented as its respective logos. Intentionally there is no vertical scrolling to maintain simplicity of the page.
 
-- **show circle social icons**
+#### Home - Social Media Links
+<img src="docs/home_social.png" alt="home social media links" width="150px">
 
-#### Home page - Mobile (mockup)
 
-<img src="docs/home_mobile.png" alt="home page mobile display mockup" width="300px">
+#### Home - Mobile (mockup)
+
+<img src="docs/home_mobile.png" alt="home mobile mockup" width="200px">
+
+#### Home - Mobile (screenshot)
+
+<img src="docs/home_mobile_ss.png" alt="home mobile screenshot" width="200px">
 
 <br></br>
 
-#### Home page - Tablet (mockup)
+#### Home - Tablet (mockup)
 
-<img src="docs/home_tablet.png" alt="home page tablet display mockup" width="500px">
+<img src="docs/home_tablet.png" alt="home page tablet display mockup" width="300px">
 
 - Initially during the mockup stages of the website in tablet display, the nagivation bar was designed to remain collapsed as a hamburger icon as it does during mobile display. However, when implementing the design, the top of the page looked too empty, throwing off the visual balance of all the elements. So, the tablet display has the same navigation features as the desktop display.
+
+#### Home - Tablet (screenshot)
+
+<img src="docs/home_tablet_ss.png" alt="home tablet screenshot" width="300px">
 
 <br></br>
 
 #### Home page - Desktop (mockup)
 
 <img src="docs/home_desktop.png" alt="home page desktop display mockup" width="600px">
+
+#### Home - Desktop (screenshot)
+
+<img src="docs/home_desktop_ss.png" alt="home desktop screenshot" width="600px">
 
 
 <br></br>
@@ -80,22 +93,39 @@ All sections in the home page are combined to take up 100% of viewport height. S
 
 The about page consist of 2 sections:
 
-1. About me section.
-2. Hobbies and interests section that has 2 sub sections. 
+1. About me 
+2. Hobbies and interests that has 2 sub sections. 
 
-Originally, the design of the website was to use inverted colours for every second section to create a clear distinction. However, as it was being developed, the ability to interact with the website responsively proved that the black blockouts were too contrasty. This led to a decision the minimal consistency seen in the home page, as it only uses a border to separate sections. 
+Originally, the design of the website was to use inverted colours for every second section to create a clear distinction between content. However, as it was being developed, the ability to interact with the website responsively proved that the black blockouts were too visually heavy and was not aesthetically pleasing. This led to a decision to maintain a minimal consistency seen in the home page, using only a border to separate sections. 
 
 #### About - Mobile (mockup)
 
-<img src="docs/about_mobile.png" alt="about page mobile display mockup" width="200px">
+<img src="docs/about_mobile.png" alt="about mobile mockup" width="200px">
+
+#### About - Mobile (screenshot)
+
+<img src="docs/about_mobile_ss.png" alt="about mobile screenshot" width="200px">
 
 #### About - Tablet (mockup)
 
-<img src="docs/about_tablet.png" alt="about page tablet display mockup" width="300px">
+<img src="docs/about_tablet.png" alt="about tablet mockup" width="300px">
+
+- When the screen size increased, the sections split into two columns to fit more content horizontally on the page. 
+- The images are given a width to maintain a consistent size horizontally against the text.
+
+#### About - Tablet (screenshot)
+
+<img src="docs/about_tablet_ss.png" alt="about tablet screenshot" width="300px">
 
 #### About - Desktop (mockup)
 
 <img src="docs/about_desktop.png" alt="about page desktop display mockup" width="400px">
+
+- Originally, the desktop display was to use a four column structure to fit the content into. This would justify the **about text** to the left of the page, as it also splits into two columns to fill up space horizontally. This is also done to the sub sections of hobbies and interests to allow the image to take up more space, as it is the more visually interesting element. However, when the design was implemented, it was found that when the screen size decreased, even a little, the columns would become drastically slim thus creating an ugly display of text. This was mitgated by keeping the layout consistent with the tablet display. 
+
+#### About - Desktop (screenshot)
+
+<img src="docs/about_desktop_ss.png" alt="about desktop screenshot" width="800px">
 
 
 <br></br>
@@ -103,6 +133,12 @@ Originally, the design of the website was to use inverted colours for every seco
 ### Work Page
 
 After completeing the about page, I decided to revisit the design of the work page and follow the more minimalistic approach using borders to separate sections rather than color blocks. 
+
+The work page consists of 3 sections:
+
+- Information about self, contains a resume link 
+- Education history
+- Work history
 
 #### Work - Mobile (mockup 1)
 
